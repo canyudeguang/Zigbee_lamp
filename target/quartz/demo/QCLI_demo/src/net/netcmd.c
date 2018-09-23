@@ -46,6 +46,7 @@
 
 /* TEMP */
 #define QCA4020 1
+extern int flag_newwlan;
 
 #ifdef CONFIG_NET_DNSSD_DEMO
 /* mDNS interface name */
@@ -57,6 +58,7 @@ static QCLI_Command_Status_t ping(uint32_t Parameter_Count, QCLI_Parameter_t *Pa
 static QCLI_Command_Status_t ping6(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 #endif
 #ifdef CONFIG_NET_DHCPV4C_DEMO
+QCLI_Command_Status_t d_dhcpv4c(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t dhcpv4c(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 #endif
 #ifdef CONFIG_NET_AUTOIP_DEMO
@@ -67,9 +69,11 @@ static QCLI_Command_Status_t ifconfig(uint32_t Parameter_Count, QCLI_Parameter_t
 static QCLI_Command_Status_t dhcpv6c(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 #endif
 #ifdef CONFIG_NET_SNTPC_DEMO
+QCLI_Command_Status_t d_sntpc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t sntpc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 #endif
 #ifdef CONFIG_NET_DNSC_DEMO
+QCLI_Command_Status_t d_dnsc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t dnsc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 #endif
 #ifdef CONFIG_NET_WLAN_BRIDGE_DEMO
@@ -1202,6 +1206,8 @@ static int32_t ipconfig_dhcpc_success_cb(uint32_t addr, uint32_t mask, uint32_t 
             inet_ntop(AF_INET, &mask, mask_str, sizeof(mask_str)),
             inet_ntop(AF_INET, &gw, gw_str, sizeof(gw_str)));
 
+    QCLI_Printf(qcli_net_handle, "in ipconfig_dhcpc_success_cb ------- \n");
+    flag_newwlan = 1;
     return 0;
 }
 
@@ -1209,6 +1215,11 @@ static int32_t ipconfig_dhcpc_success_cb(uint32_t addr, uint32_t mask, uint32_t 
  *         [0]   [1]
  * Dhcpv4c wlan0 new|release
  *****************************************************************************/
+QCLI_Command_Status_t d_dhcpv4c(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return dhcpv4c(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t dhcpv4c(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
     char *interface_name;
@@ -1967,6 +1978,11 @@ fail:
  * Sntpc  del         1
  * Sntpc  utc
  *****************************************************************************/
+QCLI_Command_Status_t d_sntpc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return sntpc(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t sntpc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
     int32_t e = -1;
@@ -2172,6 +2188,11 @@ parm_error:
  * Dnsc gethostbyname2  sclcelinux1.qualcomm.com [v4]
  * Dnsc gethostbyname2  sclcelinux1.qualcomm.com [v6]
  *****************************************************************************/
+QCLI_Command_Status_t d_dnsc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return dnsc(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t dnsc(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
     int32_t e = -1;

@@ -1196,6 +1196,12 @@ qbool_t QCLI_Initialize(void)
    return(true);
 }
 
+void zigbee_printf(char *str)
+{
+
+        QCLI_Printf(MAIN_PRINTF_HANDLE, "\n%s\n", str);
+}
+
 /**
    @brief This function passes characters input from the command line to
           the QCLI module for processing.

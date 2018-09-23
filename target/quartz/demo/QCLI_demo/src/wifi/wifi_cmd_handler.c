@@ -48,6 +48,8 @@ void wlan_dbg_exit (void);
 #include "qapi_cpuprofile.h"
 #endif
 
+extern int flag_connectwifi;
+
 /************************** Global Declarations ************************************************/
 
 #define FALSE 0
@@ -1220,6 +1222,8 @@ void wifi_connect_handler(int val, uint8_t devId,uint8_t * mac,boolean_t bssConn
     else if(val == 0x10 /*PEER_FIRST_NODE_JOIN_EVENT*/) //this event is used to RSNA success
     {
         QCLI_Printf(qcli_wlan_group, "4 way handshake success for device=%d \r\n",devId);
+	QCLI_Printf(qcli_wlan_group, "test----------------------------\r\n");
+	flag_connectwifi = 1;
     }
     else if(val == FALSE)
     {

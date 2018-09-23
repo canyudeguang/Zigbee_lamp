@@ -82,6 +82,9 @@
     #include "flashlog_demo.h"
 #endif
 
+int flag_connectwifi = 0;
+int flag_newwlan = 0;
+
 /*-------------------------------------------------------------------------
  * Preprocessor Definitions and Constants
  *-----------------------------------------------------------------------*/
@@ -357,6 +360,80 @@ static void Uart_Rx_CB(uint32 Num_Bytes, void* CB_Data)
    }
 }
 
+void init_WiFi()
+{
+	enableWlan(0, NULL);
+
+	QCLI_Parameter_t param_pass[1];
+	param_pass[0].String_Value = "syythundersoft";
+	param_pass[0].Integer_Is_Valid = false;
+	setWpaPassphrase(1, param_pass);
+
+	QCLI_Parameter_t param_param[3];
+	param_param[0].String_Value = "WPA2";
+	param_param[0].Integer_Is_Valid = false;
+	param_param[1].String_Value = "CCMP";
+	param_param[1].Integer_Is_Valid = false;
+	param_param[2].String_Value = "CCMP";
+        param_param[2].Integer_Is_Valid = false;
+        setWpaParams(3, param_param);
+
+	QCLI_Parameter_t param_connect[1];
+        param_connect[0].String_Value = "android_5G";
+        param_connect[0].Integer_Is_Valid = false;
+        connect(1, param_connect);
+
+	while(true)
+        {
+                if(flag_connectwifi == 1)
+                {
+                        break;
+                }
+                qurt_thread_sleep(30);
+                zigbee_printf("wait for connect wifi!");
+        }
+
+	QCLI_Parameter_t param_dhcp[2];
+        param_dhcp[0].String_Value = "wlan0";
+        param_dhcp[0].Integer_Is_Valid = false;
+        param_dhcp[1].String_Value = "new";
+        param_dhcp[1].Integer_Is_Valid = false;
+        d_dhcpv4c(2, param_dhcp);
+
+	while(true)
+        {
+                if(flag_newwlan == 1)
+                {
+                        break;
+                }
+                qurt_thread_sleep(30);
+                zigbee_printf("wait for new wlan!");
+        }
+
+	QCLI_Parameter_t param_dnscstart[1];
+        param_dnscstart[0].String_Value = "start";
+        param_dnscstart[0].Integer_Is_Valid = false;
+        d_dnsc(1, param_dnscstart);
+
+        QCLI_Parameter_t param_dnscaddsrv[1];
+        param_dnscaddsrv[0].String_Value = "addsrv";
+        param_dnscaddsrv[0].Integer_Is_Valid = false;
+        param_dnscaddsrv[1].String_Value = "8.8.8.8";
+        param_dnscaddsrv[1].Integer_Is_Valid = false;
+        d_dnsc(2, param_dnscaddsrv);
+
+        QCLI_Parameter_t param_sntpcstart[1];
+        param_sntpcstart[0].String_Value = "start";
+        param_sntpcstart[0].Integer_Is_Valid = false;
+        d_sntpc(1, param_sntpcstart);
+
+        QCLI_Parameter_t param_sntpcaddsvr[1];
+        param_sntpcaddsvr[0].String_Value = "addsvr";
+        param_sntpcaddsvr[0].Integer_Is_Valid = false;
+        param_sntpcaddsvr[1].String_Value = "24.56.178.140";
+        param_sntpcaddsvr[1].Integer_Is_Valid = false;
+        d_sntpc(2, param_sntpcaddsvr);
+}
 /**
    @brief This function represents the main thread of execution.
 
@@ -365,6 +442,7 @@ static void Uart_Rx_CB(uint32 Num_Bytes, void* CB_Data)
 */
 static void QCLI_Thread(void *Param)
 {
+   init_WiFi();
    uint32_t CurrentIndex;
 
 
