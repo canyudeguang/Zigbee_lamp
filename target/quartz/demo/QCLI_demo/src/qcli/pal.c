@@ -84,7 +84,6 @@
 
 int flag_connectwifi = 0;
 int flag_newwlan = 0;
-
 /*-------------------------------------------------------------------------
  * Preprocessor Definitions and Constants
  *-----------------------------------------------------------------------*/
@@ -360,6 +359,16 @@ static void Uart_Rx_CB(uint32 Num_Bytes, void* CB_Data)
    }
 }
 
+void init_ecosystem()
+{
+        zigbee_printf("in init_ecosystem!");
+        QCLI_Parameter_t param_eco[1];
+        param_eco[0].String_Value = "HostName=Flamingo.azure-devices.net;DeviceId=qca;SharedAccessKey=BK1gcZG/aljMRNaVkEWvMajJm8iXC0rdY4R9WcVz1rM=";
+        param_eco[0].Integer_Is_Valid = false;
+        azure_simple_init(1, param_eco);
+}
+
+
 void init_WiFi()
 {
 	enableWlan(0, NULL);
@@ -433,6 +442,7 @@ void init_WiFi()
         param_sntpcaddsvr[1].String_Value = "24.56.178.140";
         param_sntpcaddsvr[1].Integer_Is_Valid = false;
         d_sntpc(2, param_sntpcaddsvr);
+   	qurt_thread_sleep(3000);
 }
 /**
    @brief This function represents the main thread of execution.
@@ -443,6 +453,7 @@ void init_WiFi()
 static void QCLI_Thread(void *Param)
 {
    init_WiFi();
+   init_ecosystem();
    uint32_t CurrentIndex;
 
 
