@@ -84,6 +84,10 @@
 
 int flag_connectwifi = 0;
 int flag_newwlan = 0;
+
+
+int flag_connect = 0;
+int flag_form = 0;
 /*-------------------------------------------------------------------------
  * Preprocessor Definitions and Constants
  *-----------------------------------------------------------------------*/
@@ -357,6 +361,118 @@ static void Uart_Rx_CB(uint32 Num_Bytes, void* CB_Data)
       /* Signal the event that data was received. */
       qurt_signal_set(&(PAL_Context.Event), PAL_EVENT_MASK_RECEIVE);
    }
+}
+
+void init_Zigbee()
+{
+        d_cmd_ZB_Initialize(0,NULL);
+
+
+        QCLI_Parameter_t param_setBIB[4];
+        param_setBIB[0].Integer_Value = 0x100f;
+        param_setBIB[0].Integer_Is_Valid = true;
+        param_setBIB[1].Integer_Value = 1;
+        param_setBIB[1].Integer_Is_Valid = true;
+        param_setBIB[2].Integer_Value = 4;
+        param_setBIB[2].Integer_Is_Valid = true;
+        param_setBIB[3].Integer_Value = 0;
+        param_setBIB[3].Integer_Is_Valid = true;
+        d_cmd_ZB_SetBIB(4, param_setBIB);
+
+
+        QCLI_Parameter_t param_CE[2];
+        param_CE[0].Integer_Value = 1;
+        param_CE[0].Integer_Is_Valid = true;
+        param_CE[1].Integer_Value = 6;
+        param_CE[1].Integer_Is_Valid = true;
+        d_cmd_ZB_CL_CreateEndpoint(2, param_CE);
+
+
+        QCLI_Parameter_t param_form[1];
+        param_form[0].Integer_Value = 1;
+        param_form[0].Integer_Is_Valid = true;
+        d_cmd_ZB_Form(1, param_form);
+
+        while(true)
+        {
+                if(flag_form == 1)
+                {
+                        zigbee_printf("Form Zigbee network success!");
+                        break;
+                }
+                qurt_thread_sleep(50);
+                zigbee_printf("wait for forming Zigbee network!");
+        }
+}
+
+void Connect_ZigbeeDevice()
+{
+        while(true)
+        {
+                if(flag_connect == 1)
+                {
+                        zigbee_printf("Device join success!");
+                        break;
+                }
+                qurt_thread_sleep(50);
+                zigbee_printf("wait that blub join in Zigbee network!");
+        }
+}
+
+int Control_ZigbeeLightOnOff(int on)
+{
+        if(on > 1)
+        {
+                QCLI_Parameter_t param_on[2];
+                param_on[0].Integer_Value = 1;
+                param_on[0].Integer_Is_Valid = true;
+                param_on[1].Integer_Value = 1;
+                param_on[1].Integer_Is_Valid = true;
+                d_cmd_ZCL_OnOff_On(2, param_on);
+        }
+        else{
+                QCLI_Parameter_t param_off[2];
+                param_off[0].Integer_Value = 1;
+                param_off[0].Integer_Is_Valid = true;
+                param_off[1].Integer_Value = 1;
+                param_off[1].Integer_Is_Valid = true;
+                d_cmd_ZCL_OnOff_Off(2, param_off);
+        }
+
+        return 0;
+}
+
+int Control_ZigbeeLightLevel(int level)
+{
+                QCLI_Parameter_t param_level[5];
+                param_level[0].Integer_Value = 1;
+                param_level[0].Integer_Is_Valid = true;
+                param_level[1].Integer_Value = 1;
+                param_level[1].Integer_Is_Valid = true;
+                param_level[2].Integer_Value = 1;
+                param_level[2].Integer_Is_Valid = true;
+                param_level[3].Integer_Value = level;
+                param_level[3].Integer_Is_Valid = true;
+                param_level[4].Integer_Value = 5;
+                param_level[4].Integer_Is_Valid = true;
+                d_cmd_ZCL_LevelControl_MoveToLevel(5, param_level);
+                return 0;
+}
+
+int Control_ZigbeeColorTemperaturn(int temp)
+{
+                QCLI_Parameter_t param_temp[4];
+                param_temp[0].Integer_Value = 1;
+                param_temp[0].Integer_Is_Valid = true;
+                param_temp[1].Integer_Value = 1;
+                param_temp[1].Integer_Is_Valid = true;
+                param_temp[2].Integer_Value = temp;
+                param_temp[2].Integer_Is_Valid = true;
+                param_temp[3].Integer_Value = 5;
+                param_temp[3].Integer_Is_Valid = true;
+                d_cmd_ZCL_ColorControl_MoveToColorTemp(4, param_temp);
+
+                return 0;
 }
 
 void init_ecosystem()

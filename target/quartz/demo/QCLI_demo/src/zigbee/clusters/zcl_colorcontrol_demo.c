@@ -100,6 +100,7 @@ static QCLI_Command_Status_t cmd_ZCL_ColorControl_MoveToColor(uint32_t Parameter
 static QCLI_Command_Status_t cmd_ZCL_ColorControl_MoveColor(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_ColorControl_StepColor(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_ColorControl_MoveToColorTemp(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZCL_ColorControl_MoveToColorTemp(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_ColorControl_MoveColorTemp(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_ColorControl_StepColorTemp(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_ColorControl_StopMoveStep(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
@@ -1077,6 +1078,11 @@ static QCLI_Command_Status_t cmd_ZCL_ColorControl_StepColor(uint32_t Parameter_C
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+QCLI_Command_Status_t d_cmd_ZCL_ColorControl_MoveToColorTemp(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZCL_ColorControl_MoveToColorTemp(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t cmd_ZCL_ColorControl_MoveToColorTemp(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
    QCLI_Command_Status_t           Ret_Val;

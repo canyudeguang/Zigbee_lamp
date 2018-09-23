@@ -47,7 +47,9 @@ static ZigBee_Onoff_Demo_Context_t ZigBee_OnOff_Demo_Context;
 
 /* Function prototypes. */
 static QCLI_Command_Status_t cmd_ZCL_OnOff_On(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZCL_OnOff_On(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_OnOff_Off(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZCL_OnOff_Off(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_OnOff_Toggle(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_OnOff_SetSceneData(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 
@@ -85,6 +87,11 @@ const QCLI_Command_Group_t ZCL_OnOff_Cmd_Group = {"OnOff", sizeof(ZigBee_OnOff_C
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+QCLI_Command_Status_t d_cmd_ZCL_OnOff_On(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZCL_OnOff_On(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t cmd_ZCL_OnOff_On(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
    qapi_Status_t                   Result;
@@ -169,6 +176,11 @@ static QCLI_Command_Status_t cmd_ZCL_OnOff_On(uint32_t Parameter_Count, QCLI_Par
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+QCLI_Command_Status_t d_cmd_ZCL_OnOff_Off(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZCL_OnOff_Off(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t cmd_ZCL_OnOff_Off(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
    QCLI_Command_Status_t           Ret_Val;

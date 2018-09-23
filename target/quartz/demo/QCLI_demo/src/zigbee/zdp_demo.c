@@ -34,6 +34,7 @@
 /* The maxium length of an attribute being read and written.            */
 #define MAXIMUM_ATTRIUBTE_LENGTH                      (8)
 
+extern int flag_connect;
 static const uint8_t User_Desciptor_Set[] = "Dummy Text";
 #define USER_DESCRIPTOR_SET_SIZE          (sizeof(User_Desciptor_Set) - 1)
 
@@ -2330,6 +2331,7 @@ static QCLI_Command_Status_t cmd_ZDP_SetLocalUserDesc(uint32_t Parameter_Count, 
    @param CB_Param       is the user specified parameter for the callback
                          function.
 */
+extern uint64_t  device_addr;
 static void ZB_ZDP_Event_CB(qapi_ZB_Handle_t ZB_Handle, const qapi_ZB_ZDP_Event_t *ZDP_Event_Data, uint32_t CB_Param)
 {
    qapi_ZB_Handle_t ZigBee_Handle;
@@ -2576,6 +2578,17 @@ static void ZB_ZDP_Event_CB(qapi_ZB_Handle_t ZB_Handle, const qapi_ZB_ZDP_Event_
             QCLI_Printf(ZDP_Demo_Context.QCLI_Handle, "  ExtendedAddress: %08X%08X\n", (uint32_t)(ZDP_Event_Data->Event_Data.Device_Annce.IEEEAddr >> 32), (uint32_t)(ZDP_Event_Data->Event_Data.Device_Annce.IEEEAddr));
             QCLI_Printf(ZDP_Demo_Context.QCLI_Handle, "  NetworkAddress:  0x%04X\n", ZDP_Event_Data->Event_Data.Device_Annce.NwkAddr);
             QCLI_Printf(ZDP_Demo_Context.QCLI_Handle, "  Capability:      0x%02X\n", ZDP_Event_Data->Event_Data.Device_Annce.Capability);
+	    		QCLI_Parameter_t param[3];
+            		param[0].Integer_Value = 2;
+                        param[0].Integer_Is_Valid = true;
+                        param[1].Integer_Value = ZDP_Event_Data->Event_Data.Device_Annce.NwkAddr;
+                        device_addr = ZDP_Event_Data->Event_Data.Device_Annce.NwkAddr;
+                        QCLI_Printf(ZDP_Demo_Context.QCLI_Handle, "  NetworkAddress:  %d\n", ZDP_Event_Data->Event_Data.Device_Annce.NwkAddr);
+                        param[1].Integer_Is_Valid = true;
+                        param[2].Integer_Value = 1;
+                        param[2].Integer_Is_Valid = true;
+                        d_cmd_ZB_AddDevice(3, param);
+                        flag_connect = 1;
             break;
 
          case QAPI_ZB_ZDP_EVENT_TYPE_END_DEVICE_BIND_RSP_E:

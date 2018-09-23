@@ -62,6 +62,7 @@ static const qapi_ZB_CL_Attribute_t LevelControlDemoCustomAttrList[] =
 
 /* Function prototypes. */
 static QCLI_Command_Status_t cmd_ZCL_LevelControl_MoveToLevel(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZCL_LevelControl_MoveToLevel(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_LevelControl_Move(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_LevelControl_Step(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZCL_LevelControl_Stop(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
@@ -106,6 +107,11 @@ const QCLI_Command_Group_t ZCL_LevelControl_Cmd_Group = {"LevelControl", sizeof(
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+QCLI_Command_Status_t d_cmd_ZCL_LevelControl_MoveToLevel(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZCL_LevelControl_MoveToLevel(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t cmd_ZCL_LevelControl_MoveToLevel(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
    QCLI_Command_Status_t           Ret_Val;

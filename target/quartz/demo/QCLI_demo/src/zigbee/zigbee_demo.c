@@ -36,6 +36,7 @@
 #include "qapi_zb_cl_identify.h"
 #include "qapi_persist.h"
 
+extern int flag_form;
 /* The default PAN ID used by the ZigBee demo application. */
 #define DEFAULT_ZIGBEE_PAN_ID                         (0xB89B)
 
@@ -97,11 +98,14 @@ const static qapi_ZB_Security_t Default_ZB_Secuity =
 };
 
 static QCLI_Command_Status_t cmd_ZB_Initialize(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZB_Initialize(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_Shutdown(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_AddDevice(uint32_t Parameter_Count,  QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZB_AddDevice(uint32_t Parameter_Count,  QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_RemoveDevice(uint32_t Parameter_Count,  QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_ShowDeviceList(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_Form(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZB_Form(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_Join(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_Reconnect(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_Leave(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
@@ -112,6 +116,7 @@ static QCLI_Command_Status_t cmd_ZB_SetNIB(uint32_t Parameter_Count, QCLI_Parame
 static QCLI_Command_Status_t cmd_ZB_GetAIB(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_SetAIB(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_SetBIB(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
+QCLI_Command_Status_t d_cmd_ZB_SetBIB(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_GetBIB(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_SetExtAddress(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
 static QCLI_Command_Status_t cmd_ZB_GetAddresses(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List);
@@ -170,6 +175,11 @@ const QCLI_Command_Group_t ZigBee_CMD_Group = {"ZigBee", sizeof(ZigBee_CMD_List)
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+QCLI_Command_Status_t d_cmd_ZB_Initialize(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZB_Initialize(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t cmd_ZB_Initialize(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
    QCLI_Command_Status_t  Ret_Val;
@@ -372,6 +382,12 @@ static QCLI_Command_Status_t cmd_ZB_Shutdown(uint32_t Parameter_Count, QCLI_Para
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+static QCLI_Command_Status_t d_cmd_ZB_AddDevice(uint32_t Parameter_Count,  QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZB_AddDevice(Parameter_Count,  Parameter_List);
+}
+
+uint64_t  device_addr = 0;
 static QCLI_Command_Status_t cmd_ZB_AddDevice(uint32_t Parameter_Count,  QCLI_Parameter_t *Parameter_List)
 {
    uint32_t              Index;
@@ -383,9 +399,10 @@ static QCLI_Command_Status_t cmd_ZB_AddDevice(uint32_t Parameter_Count,  QCLI_Pa
    if(ZigBee_Demo_Context.ZigBee_Handle != 0)
    {
       if((Parameter_Count >= 2) &&
-         (Verify_Integer_Parameter(&Parameter_List[0], QAPI_ZB_ADDRESS_MODE_GROUP_ADDRESS_E, QAPI_ZB_ADDRESS_MODE_EXTENDED_ADDRESS_E)) &&
-         (Hex_String_To_ULL(Parameter_List[1].String_Value, &DevAddr)))
+         (Verify_Integer_Parameter(&Parameter_List[0], QAPI_ZB_ADDRESS_MODE_GROUP_ADDRESS_E, QAPI_ZB_ADDRESS_MODE_EXTENDED_ADDRESS_E)) /*&&
+         (Hex_String_To_ULL(Parameter_List[1].String_Value, &DevAddr))*/)
       {
+	      DevAddr = device_addr;
          DevType = (qapi_ZB_Addr_Mode_t)Parameter_List[0].Integer_Value;
 
          /* Assume success unless something goes wrong. */
@@ -609,6 +626,11 @@ static QCLI_Command_Status_t cmd_ZB_ShowDeviceList(uint32_t Parameter_Count, QCL
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+QCLI_Command_Status_t d_cmd_ZB_Form(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZB_Form(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t cmd_ZB_Form(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
    QCLI_Command_Status_t   Ret_Val;
@@ -1466,6 +1488,11 @@ static QCLI_Command_Status_t cmd_ZB_SetAIB(uint32_t Parameter_Count, QCLI_Parame
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
+QCLI_Command_Status_t d_cmd_ZB_SetBIB(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+{
+	return cmd_ZB_SetBIB(Parameter_Count, Parameter_List);
+}
+
 static QCLI_Command_Status_t cmd_ZB_SetBIB(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
    QCLI_Command_Status_t  Ret_Val;
@@ -1932,6 +1959,7 @@ static void ZB_Event_CB(qapi_ZB_Handle_t ZB_Handle, const qapi_ZB_Event_t *ZB_Ev
             QCLI_Printf(ZigBee_Demo_Context.QCLI_Handle, "Form confirm:\n");
             QCLI_Printf(ZigBee_Demo_Context.QCLI_Handle, "  Status:  %d\n", ZB_Event->Event_Data.Form_Confirm.Status);
             QCLI_Printf(ZigBee_Demo_Context.QCLI_Handle, "  Channel: %d\n", ZB_Event->Event_Data.Form_Confirm.ActiveChannel);
+	    flag_form = 1;
             break;
 
          case QAPI_ZB_EVENT_TYPE_JOIN_CONFIRM_E:
