@@ -1,0 +1,1452 @@
+
+13:37:08: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\build\tools\flash\fh_loader.exe --port=\\.\COM4 --porttracename=output\port_trace.txt --memoryname=spinor --sendxml=output\generated_fwd_table.xml --search_path=D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output,D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx,D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan,output 
+************************************************
+
+13:37:08: DEBUG: Binary build date: Mar 10 2016 @ 12:36:52
+
+13:37:08: DEBUG: Build Version: 16.03.10.12.36.52
+
+13:37:08: INFO: Current working dir (cwd): D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\
+13:37:08: INFO: Showing network mappings to allow debugging
+13:37:08: DEBUG: 会记录新的网络连接。
+
+13:37:08: DEBUG: 
+
+13:37:08: DEBUG: 列表是空的。
+
+13:37:08: DEBUG: 
+
+13:37:08: INFO: 'output\' changed to
+13:37:08: INFO: this 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\'
+13:37:08: INFO: 
+
+
+
+13:37:08: INFO: Trying to store 'output\generated_fwd_table.xml' in string table
+13:37:08: DEBUG: ==================================================================================
+13:37:08: DEBUG: ==================================================================================
+13:37:08: INFO: Looking for file 'output\generated_fwd_table.xml'
+13:37:08: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\output\generated_fwd_table.xml')
+13:37:08: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\output\generated_fwd_table.xml')
+13:37:08: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\output\generated_fwd_table.xml')
+13:37:08: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\output\generated_fwd_table.xml')
+13:37:08: DEBUG: 2. Calling stat(output\generated_fwd_table.xml')
+13:37:08: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\generated_fwd_table.xml') with AccessMode='rb'
+13:37:08: DEBUG: Trying get filesize, calling fseek()
+13:37:08: DEBUG: Found 'output\generated_fwd_table.xml' (611 bytes) in local directory 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\
+13:37:08: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\generated_fwd_table.xml') with AccessMode='r'
+13:37:08: DEBUG: Trying get filesize, calling fseek()
+13:37:08: INFO: User wants to talk to port '\\.\COM4'
+13:37:08: DEBUG: port_fd=0x4C
+
+13:37:08: INFO: Took       0.00000000 seconds to open port
+13:37:08: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+13:37:08: INFO: If  you don't want this, use --dontsorttags
+
+13:37:08: INFO: Sending <configure>
+13:37:08: DEBUG: CHANNEL DATA (P0000) (H00202) (    248 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<configure MemoryName="spinor" Verbose="0" AlwaysValidate="0" MaxDigestTableSizeInBytes="8192" MaxPayloadSizeToTargetInBytes="1048576" ZlpAwareHost="1" SkipStorageInit="0" TargetName="8960" />
+</data>
+
+============================================================================================================
+
+13:37:08: DEBUG: CharsInBuffer=0 Trying to read from USB 8192 bytes
+13:37:08: DEBUG: CHANNEL DATA (1313 bytes) <-- TARGET to HOST
+13:37:08: DEBUG: CharsInBuffer = 1313
+13:37:08: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 1313 bytes
+
+13:37:08: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:08: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:08: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:08: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 42 69 6E 61 72 log value="Binar
+13:37:08: DEBUG: printBuffer:5353 79 20 62 75 69 6C 64 20 64 61 74 65 3A 20 4A 75 y build date: Ju
+13:37:08: DEBUG: printBuffer:5353 6E 20 31 38 20 32 30 31 38 20 40 20 31 34 3A 35 n 18 2018 @ 14:5
+13:37:08: DEBUG: printBuffer:5353 36 3A 32 30 22 2F 3E 0A 3C 2F 64 61 74 61 3E 3C 6:20"/>.</data><
+13:37:08: DEBUG: printBuffer:5353 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 2E ?xml version="1.
+13:37:08: DEBUG: printBuffer:5353 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 46 0" encoding="UTF
+13:37:08: DEBUG: printBuffer:5353 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C 6C -8" ?>.<data>.<l
+13:37:08: DEBUG: printBuffer:5353 6F 67 20 76 61 6C 75 65 3D 22 43 61 6E 6E 6F 74 og value="Cannot
+13:37:08: DEBUG: printBuffer:5353 20 67 65 74 20 63 68 69 70 20 73 65 72 69 61 6C  get chip serial
+13:37:08: DEBUG: printBuffer:5353 20 6E 75 6D 62 65 72 2C 20 73 65 63 62 6F 6F 74  number, secboot
+13:37:08: DEBUG: printBuffer:5353 5F 68 77 5F 67 65 74 5F 73 65 72 69 61 6C 5F 6E _hw_get_serial_n
+13:37:08: DEBUG: printBuffer:5353 75 6D 28 29 20 72 65 74 75 72 6E 65 64 20 65 72 um() returned er
+13:37:08: DEBUG: printBuffer:5353 72 6E 6F 3D 31 22 2F 3E 0A 3C 2F 64 61 74 61 3E rno=1"/>.</data>
+13:37:08: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:08: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:08: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:08: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 45 52 52 4F 52 log value="ERROR
+13:37:08: DEBUG: printBuffer:5353 20 30 3A 20 4C 69 6E 65 20 31 34 38 3A 20 46 41  0: Line 148: FA
+13:37:08: DEBUG: printBuffer:5353 49 4C 55 52 45 5F 43 48 49 50 5F 53 45 52 49 41 ILURE_CHIP_SERIA
+13:37:08: DEBUG: printBuffer:5353 4C 5F 4E 55 4D 42 45 52 22 2F 3E 0A 3C 2F 64 61 L_NUMBER"/>.</da
+13:37:08: DEBUG: printBuffer:5353 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E ta><?xml version
+13:37:08: DEBUG: printBuffer:5353 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D ="1.0" encoding=
+13:37:08: DEBUG: printBuffer:5353 22 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 "UTF-8" ?>.<data
+13:37:08: DEBUG: printBuffer:5353 3E 0A 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 43 68 >.<log value="Ch
+13:37:08: DEBUG: printBuffer:5353 69 70 20 73 65 72 69 61 6C 20 6E 75 6D 3A 20 30 ip serial num: 0
+13:37:08: DEBUG: printBuffer:5353 20 28 30 78 30 29 22 2F 3E 0A 3C 2F 64 61 74 61  (0x0)"/>.</data
+13:37:08: DEBUG: printBuffer:5353 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 ><?xml version="
+13:37:08: DEBUG: printBuffer:5353 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 1.0" encoding="U
+13:37:08: DEBUG: printBuffer:5353 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A TF-8" ?>.<data>.
+13:37:08: DEBUG: printBuffer:5353 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 53 75 70 70 <log value="Supp
+13:37:08: DEBUG: printBuffer:5353 6F 72 74 65 64 20 46 75 6E 63 74 69 6F 6E 73 3A orted Functions:
+13:37:08: DEBUG: printBuffer:5353 20 70 72 6F 67 72 61 6D 20 63 6F 6E 66 69 67 75  program configu
+13:37:08: DEBUG: printBuffer:5353 72 65 20 6E 6F 70 20 66 69 72 6D 77 61 72 65 77 re nop firmwarew
+13:37:08: DEBUG: printBuffer:5353 72 69 74 65 20 70 61 74 63 68 20 73 65 74 62 6F rite patch setbo
+13:37:08: DEBUG: printBuffer:5353 6F 74 61 62 6C 65 73 74 6F 72 61 67 65 64 72 69 otablestoragedri
+13:37:08: DEBUG: printBuffer:5353 76 65 20 75 66 73 20 65 6D 6D 63 20 70 6F 77 65 ve ufs emmc powe
+13:37:08: DEBUG: printBuffer:5353 72 20 62 65 6E 63 68 6D 61 72 6B 20 72 65 61 64 r benchmark read
+13:37:08: DEBUG: printBuffer:5353 20 67 65 74 73 74 6F 72 61 67 65 69 6E 66 6F 20  getstorageinfo 
+13:37:08: DEBUG: printBuffer:5353 67 65 74 73 68 61 32 35 36 64 69 67 65 73 74 20 getsha256digest 
+13:37:08: DEBUG: printBuffer:5353 65 72 61 73 65 20 22 2F 3E 0A 3C 2F 64 61 74 61 erase "/>.</data
+13:37:08: DEBUG: printBuffer:5353 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 ><?xml version="
+13:37:08: DEBUG: printBuffer:5353 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 1.0" encoding="U
+13:37:08: DEBUG: printBuffer:5353 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A TF-8" ?>.<data>.
+13:37:08: DEBUG: printBuffer:5353 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 66 68 2E 61 <log value="fh.a
+13:37:08: DEBUG: printBuffer:5353 74 74 72 73 2E 4D 61 78 50 61 79 6C 6F 61 64 53 ttrs.MaxPayloadS
+13:37:08: DEBUG: printBuffer:5353 69 7A 65 54 6F 54 61 72 67 65 74 49 6E 42 79 74 izeToTargetInByt
+13:37:08: DEBUG: printBuffer:5353 65 73 20 6F 66 20 31 30 34 38 35 37 36 20 3E 20 es of 1048576 > 
+13:37:08: DEBUG: printBuffer:5353 66 68 2E 63 68 61 6E 6E 65 6C 5F 62 75 66 66 65 fh.channel_buffe
+13:37:08: DEBUG: printBuffer:5353 72 5F 63 61 70 61 63 69 74 79 20 6F 66 20 34 30 r_capacity of 40
+13:37:08: DEBUG: printBuffer:5353 39 36 22 2F 3E 0A 3C 2F 64 61 74 61 3E 3C 3F 78 96"/>.</data><?x
+13:37:08: DEBUG: printBuffer:5353 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 2E 30 22 ml version="1.0"
+13:37:08: DEBUG: printBuffer:5353 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 46 2D 38  encoding="UTF-8
+13:37:08: DEBUG: printBuffer:5353 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C 6C 6F 67 " ?>.<data>.<log
+13:37:08: DEBUG: printBuffer:5353 20 76 61 6C 75 65 3D 22 43 61 6C 6C 69 6E 67 20  value="Calling 
+13:37:08: DEBUG: printBuffer:5353 75 73 62 5F 61 6C 5F 62 75 6C 6B 5F 73 65 74 5F usb_al_bulk_set_
+13:37:08: DEBUG: printBuffer:5353 7A 6C 70 5F 6D 6F 64 65 28 54 52 55 45 29 20 73 zlp_mode(TRUE) s
+13:37:08: DEBUG: printBuffer:5353 69 6E 63 65 20 5A 6C 70 41 77 61 72 65 48 6F 73 ince ZlpAwareHos
+13:37:08: DEBUG: printBuffer:5353 74 3D 27 31 27 22 2F 3E 0A 3C 2F 64 61 74 61 3E t='1'"/>.</data>
+13:37:08: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:08: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:08: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:08: DEBUG: printBuffer:5353 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 response value="
+13:37:08: DEBUG: printBuffer:5353 4E 41 4B 22 20 4D 69 6E 56 65 72 73 69 6F 6E 53 NAK" MinVersionS
+13:37:08: DEBUG: printBuffer:5353 75 70 70 6F 72 74 65 64 3D 22 31 22 20 4D 65 6D upported="1" Mem
+13:37:08: DEBUG: printBuffer:5353 6F 72 79 4E 61 6D 65 3D 22 73 70 69 6E 6F 72 22 oryName="spinor"
+13:37:08: DEBUG: printBuffer:5353 20 4D 61 78 50 61 79 6C 6F 61 64 53 69 7A 65 46  MaxPayloadSizeF
+13:37:08: DEBUG: printBuffer:5353 72 6F 6D 54 61 72 67 65 74 49 6E 42 79 74 65 73 romTargetInBytes
+13:37:08: DEBUG: printBuffer:5353 3D 22 34 30 39 36 22 20 4D 61 78 50 61 79 6C 6F ="4096" MaxPaylo
+13:37:08: DEBUG: printBuffer:5353 61 64 53 69 7A 65 54 6F 54 61 72 67 65 74 49 6E adSizeToTargetIn
+13:37:08: DEBUG: printBuffer:5353 42 79 74 65 73 3D 22 34 30 39 36 22 20 4D 61 78 Bytes="4096" Max
+13:37:08: DEBUG: printBuffer:5353 50 61 79 6C 6F 61 64 53 69 7A 65 54 6F 54 61 72 PayloadSizeToTar
+13:37:08: DEBUG: printBuffer:5353 67 65 74 49 6E 42 79 74 65 73 53 75 70 70 6F 72 getInBytesSuppor
+13:37:08: DEBUG: printBuffer:5353 74 65 64 3D 22 34 30 39 36 22 20 4D 61 78 58 4D ted="4096" MaxXM
+13:37:08: DEBUG: printBuffer:5353 4C 53 69 7A 65 49 6E 42 79 74 65 73 3D 22 34 30 LSizeInBytes="40
+13:37:08: DEBUG: printBuffer:5353 39 36 22 20 56 65 72 73 69 6F 6E 3D 22 31 22 20 96" Version="1" 
+13:37:08: DEBUG: printBuffer:5353 54 61 72 67 65 74 4E 61 6D 65 3D 22 51 43 41 34 TargetName="QCA4
+13:37:08: DEBUG: printBuffer:5353 30 32 30 22 20 44 61 74 65 54 69 6D 65 3D 22 4A 020" DateTime="J
+13:37:08: DEBUG: printBuffer:5353 75 6E 20 31 38 20 32 30 31 38 20 2D 20 31 34 3A un 18 2018 - 14:
+13:37:08: DEBUG: printBuffer:5353 35 36 3A 32 30 22 20 2F 3E 0A 3C 2F 64 61 74 61 56:20" />.</data
+13:37:08: DEBUG: printBuffer:5353 3E                                              >
+13:37:08: DEBUG: printBuffer:5366 
+
+
+13:37:08: DEBUG: XML FILE (111 bytes): CharsInBuffer=1313-111=1202
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Binary build date: Jun 18 2018 @ 14:56:20"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'Binary build date: Jun 18 2018 @ 14:56:20'
+13:37:08: DEBUG: XML FILE (145 bytes): CharsInBuffer=1202-145=1057
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Cannot get chip serial number, secboot_hw_get_serial_num() returned errno=1"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'Cannot get chip serial number, secboot_hw_get_serial_num() returned errno=1'
+13:37:08: DEBUG: XML FILE (115 bytes): CharsInBuffer=1057-115=942
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="ERROR 0: Line 148: FAILURE_CHIP_SERIAL_NUMBER"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'ERROR 0: Line 148: FAILURE_CHIP_SERIAL_NUMBER'
+13:37:08: DEBUG: XML FILE (94 bytes): CharsInBuffer=942-94=848
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Chip serial num: 0 (0x0)"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'Chip serial num: 0 (0x0)'
+13:37:08: DEBUG: XML FILE (224 bytes): CharsInBuffer=848-224=624
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Supported Functions: program configure nop firmwarewrite patch setbootablestoragedrive ufs emmc power benchmark read getstorageinfo getsha256digest erase "/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'Supported Functions: program configure nop firmwarewrite patch setbootablestoragedrive ufs emmc power benchmark read getstorageinfo getsha256digest erase '
+13:37:08: DEBUG: XML FILE (156 bytes): CharsInBuffer=624-156=468
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="fh.attrs.MaxPayloadSizeToTargetInBytes of 1048576 > fh.channel_buffer_capacity of 4096"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'fh.attrs.MaxPayloadSizeToTargetInBytes of 1048576 _ fh.channel_buffer_capacity of 4096'
+13:37:08: DEBUG: XML FILE (131 bytes): CharsInBuffer=468-131=337
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Calling usb_al_bulk_set_zlp_mode(TRUE) since ZlpAwareHost='1'"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'Calling usb_al_bulk_set_zlp_mode(TRUE) since ZlpAwareHost='1''
+13:37:08: DEBUG: XML FILE (337 bytes): CharsInBuffer=337-337=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="NAK" MinVersionSupported="1" MemoryName="spinor" MaxPayloadSizeFromTargetInBytes="4096" MaxPayloadSizeToTargetInBytes="4096" MaxPayloadSizeToTargetInBytesSupported="4096" MaxXMLSizeInBytes="4096" Version="1" TargetName="QCA4020" DateTime="Jun 18 2018 - 14:56:20" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: DEBUG: Response was 'NAK'
+13:37:08: INFO: fh.attrs.MaxPayloadSizeToTargetInBytes = 4096
+13:37:08: INFO: fh.attrs.MaxPayloadSizeToTargetInBytesSupported = 4096
+13:37:08: INFO: Target returned NAK for your <configure> but it does not seem to be an error. This is ok, fh_loader.exe attributes updated
+13:37:08: INFO:                         Issuing Erase                       
+13:37:08: INFO:  _____              _               _____                   
+13:37:08: INFO: |_   _|            (_)             |  ___|                  
+13:37:08: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+13:37:08: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+13:37:08: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+13:37:08: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+13:37:08: INFO:                              __/ |                          
+13:37:08: INFO:                             |___/ 
+
+
+13:37:08: DEBUG: CHANNEL DATA (P0001) (H00203) (    120 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<erase filename="" num_partition_sectors="16" start_sector="3" />
+</data>
+============================================================================================================
+
+13:37:08: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:08: DEBUG: CHANNEL DATA (229 bytes) <-- TARGET to HOST
+13:37:08: DEBUG: CharsInBuffer = 229
+13:37:08: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 229 bytes
+
+13:37:08: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:08: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:08: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:08: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 49 6E 20 68 61 log value="In ha
+13:37:08: DEBUG: printBuffer:5353 6E 64 6C 65 45 72 61 73 65 20 43 61 6C 6C 69 6E ndleErase Callin
+13:37:08: DEBUG: printBuffer:5353 67 20 73 74 6F 72 61 67 65 5F 64 65 76 69 63 65 g storage_device
+13:37:08: DEBUG: printBuffer:5353 5F 65 72 61 73 65 28 29 22 2F 3E 0A 3C 2F 64 61 _erase()"/>.</da
+13:37:08: DEBUG: printBuffer:5353 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E ta><?xml version
+13:37:08: DEBUG: printBuffer:5353 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D ="1.0" encoding=
+13:37:08: DEBUG: printBuffer:5353 22 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 "UTF-8" ?>.<data
+13:37:08: DEBUG: printBuffer:5353 3E 0A 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 44 45 >.<log value="DE
+13:37:08: DEBUG: printBuffer:5353 42 55 47 3A 20 53 50 49 4E 4F 52 20 45 72 61 73 BUG: SPINOR Eras
+13:37:08: DEBUG: printBuffer:5353 69 6E 67 20 73 65 63 74 6F 72 20 33 20 4E 75 6D ing sector 3 Num
+13:37:08: DEBUG: printBuffer:5353 20 62 6C 6F 63 6B 73 20 31 36 22 2F 3E 0A 3C 2F  blocks 16"/>.</
+13:37:08: DEBUG: printBuffer:5353 64 61 74 61 3E                                  data>
+13:37:08: DEBUG: printBuffer:5366 
+
+
+13:37:08: DEBUG: XML FILE (115 bytes): CharsInBuffer=229-115=114
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="In handleErase Calling storage_device_erase()"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'In handleErase Calling storage_device_erase()'
+13:37:08: DEBUG: XML FILE (114 bytes): CharsInBuffer=114-114=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="DEBUG: SPINOR Erasing sector 3 Num blocks 16"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:08: INFO: TARGET SAID: 'DEBUG: SPINOR Erasing sector 3 Num blocks 16'
+13:37:08: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:09: DEBUG: CHANNEL DATA (112 bytes) <-- TARGET to HOST
+13:37:09: DEBUG: CharsInBuffer = 112
+13:37:09: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 112 bytes
+
+13:37:09: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:09: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:09: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:09: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+13:37:09: DEBUG: printBuffer:5353 20 53 50 49 4E 4F 52 20 45 72 61 73 65 20 70 72  SPINOR Erase pr
+13:37:09: DEBUG: printBuffer:5353 6F 67 72 65 73 73 20 38 32 25 20 28 31 33 20 6F ogress 82% (13 o
+13:37:09: DEBUG: printBuffer:5353 66 20 31 36 29 22 2F 3E 0A 3C 2F 64 61 74 61 3E f 16)"/>.</data>
+13:37:09: DEBUG: printBuffer:5366 
+
+
+13:37:09: DEBUG: XML FILE (112 bytes): CharsInBuffer=112-112=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: SPINOR Erase progress 82% (13 of 16)"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'INFO: SPINOR Erase progress 82% (13 of 16)'
+13:37:09: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:09: DEBUG: CHANNEL DATA (302 bytes) <-- TARGET to HOST
+13:37:09: DEBUG: CharsInBuffer = 302
+13:37:09: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 302 bytes
+
+13:37:09: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:09: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:09: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:09: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 49 4E 46 4F 3A log value="INFO:
+13:37:09: DEBUG: printBuffer:5353 20 53 50 49 4E 4F 52 20 45 72 61 73 65 20 70 72  SPINOR Erase pr
+13:37:09: DEBUG: printBuffer:5353 6F 67 72 65 73 73 20 31 30 30 25 20 28 31 36 20 ogress 100% (16 
+13:37:09: DEBUG: printBuffer:5353 6F 66 20 31 36 29 2E 22 2F 3E 0A 3C 2F 64 61 74 of 16)."/>.</dat
+13:37:09: DEBUG: printBuffer:5353 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D a><?xml version=
+13:37:09: DEBUG: printBuffer:5353 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 "1.0" encoding="
+13:37:09: DEBUG: printBuffer:5353 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E UTF-8" ?>.<data>
+13:37:09: DEBUG: printBuffer:5353 0A 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 73 74 6F .<log value="sto
+13:37:09: DEBUG: printBuffer:5353 72 61 67 65 5F 64 65 76 69 63 65 5F 65 72 61 73 rage_device_eras
+13:37:09: DEBUG: printBuffer:5353 65 28 29 20 72 65 70 6F 72 74 65 64 20 53 55 43 e() reported SUC
+13:37:09: DEBUG: printBuffer:5353 43 45 53 53 22 2F 3E 0A 3C 2F 64 61 74 61 3E 3C CESS"/>.</data><
+13:37:09: DEBUG: printBuffer:5353 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 2E ?xml version="1.
+13:37:09: DEBUG: printBuffer:5353 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 46 0" encoding="UTF
+13:37:09: DEBUG: printBuffer:5353 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C 72 -8" ?>.<data>.<r
+13:37:09: DEBUG: printBuffer:5353 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D 22 41 esponse value="A
+13:37:09: DEBUG: printBuffer:5353 43 4B 22 20 2F 3E 0A 3C 2F 64 61 74 61 3E       CK" />.</data>
+13:37:09: DEBUG: printBuffer:5366 
+
+
+13:37:09: DEBUG: XML FILE (114 bytes): CharsInBuffer=302-114=188
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: SPINOR Erase progress 100% (16 of 16)."/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'INFO: SPINOR Erase progress 100% (16 of 16).'
+13:37:09: DEBUG: XML FILE (109 bytes): CharsInBuffer=188-109=79
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="storage_device_erase() reported SUCCESS"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'storage_device_erase() reported SUCCESS'
+13:37:09: DEBUG: XML FILE (79 bytes): CharsInBuffer=79-79=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: DEBUG: Response was 'ACK'
+13:37:09: INFO: 
+
+
+13:37:09: INFO: ERASE SUCCESSFUL
+13:37:09: INFO: ERASE SUCCESSFUL
+13:37:09: INFO: ERASE SUCCESSFUL
+
+
+13:37:09: INFO:                         Issuing Erase                       
+13:37:09: INFO:  _____              _               _____                   
+13:37:09: INFO: |_   _|            (_)             |  ___|                  
+13:37:09: INFO:   | | ___ ___ _   _ _ _ __   __ _  | |__ _ __ __ _ ___  ___ 
+13:37:09: INFO:   | |/ __/ __| | | | | '_ \ / _` | |  __| '__/ _` / __|/ _ \
+13:37:09: INFO:  _| |\__ \__ \ |_| | | | | | (_| | | |__| | | (_| \__ \  __/
+13:37:09: INFO:  \___/___/___/\__,_|_|_| |_|\__, | \____/_|  \__,_|___/\___|
+13:37:09: INFO:                              __/ |                          
+13:37:09: INFO:                             |___/ 
+
+
+13:37:09: DEBUG: CHANNEL DATA (P0002) (H00204) (    119 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<erase filename="" num_partition_sectors="2" start_sector="1" />
+</data>
+============================================================================================================
+
+13:37:09: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:09: DEBUG: CHANNEL DATA (528 bytes) <-- TARGET to HOST
+13:37:09: DEBUG: CharsInBuffer = 528
+13:37:09: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 528 bytes
+
+13:37:09: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:09: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:09: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:09: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 49 6E 20 68 61 log value="In ha
+13:37:09: DEBUG: printBuffer:5353 6E 64 6C 65 45 72 61 73 65 20 43 61 6C 6C 69 6E ndleErase Callin
+13:37:09: DEBUG: printBuffer:5353 67 20 73 74 6F 72 61 67 65 5F 64 65 76 69 63 65 g storage_device
+13:37:09: DEBUG: printBuffer:5353 5F 65 72 61 73 65 28 29 22 2F 3E 0A 3C 2F 64 61 _erase()"/>.</da
+13:37:09: DEBUG: printBuffer:5353 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E ta><?xml version
+13:37:09: DEBUG: printBuffer:5353 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D ="1.0" encoding=
+13:37:09: DEBUG: printBuffer:5353 22 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 "UTF-8" ?>.<data
+13:37:09: DEBUG: printBuffer:5353 3E 0A 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 44 45 >.<log value="DE
+13:37:09: DEBUG: printBuffer:5353 42 55 47 3A 20 53 50 49 4E 4F 52 20 45 72 61 73 BUG: SPINOR Eras
+13:37:09: DEBUG: printBuffer:5353 69 6E 67 20 73 65 63 74 6F 72 20 31 20 4E 75 6D ing sector 1 Num
+13:37:09: DEBUG: printBuffer:5353 20 62 6C 6F 63 6B 73 20 32 22 2F 3E 0A 3C 2F 64  blocks 2"/>.</d
+13:37:09: DEBUG: printBuffer:5353 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F ata><?xml versio
+13:37:09: DEBUG: printBuffer:5353 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 n="1.0" encoding
+13:37:09: DEBUG: printBuffer:5353 3D 22 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 ="UTF-8" ?>.<dat
+13:37:09: DEBUG: printBuffer:5353 61 3E 0A 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 49 a>.<log value="I
+13:37:09: DEBUG: printBuffer:5353 4E 46 4F 3A 20 53 50 49 4E 4F 52 20 45 72 61 73 NFO: SPINOR Eras
+13:37:09: DEBUG: printBuffer:5353 65 20 70 72 6F 67 72 65 73 73 20 31 30 30 25 20 e progress 100% 
+13:37:09: DEBUG: printBuffer:5353 28 32 20 6F 66 20 32 29 2E 22 2F 3E 0A 3C 2F 64 (2 of 2)."/>.</d
+13:37:09: DEBUG: printBuffer:5353 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F ata><?xml versio
+13:37:09: DEBUG: printBuffer:5353 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 n="1.0" encoding
+13:37:09: DEBUG: printBuffer:5353 3D 22 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 ="UTF-8" ?>.<dat
+13:37:09: DEBUG: printBuffer:5353 61 3E 0A 3C 6C 6F 67 20 76 61 6C 75 65 3D 22 73 a>.<log value="s
+13:37:09: DEBUG: printBuffer:5353 74 6F 72 61 67 65 5F 64 65 76 69 63 65 5F 65 72 torage_device_er
+13:37:09: DEBUG: printBuffer:5353 61 73 65 28 29 20 72 65 70 6F 72 74 65 64 20 53 ase() reported S
+13:37:09: DEBUG: printBuffer:5353 55 43 43 45 53 53 22 2F 3E 0A 3C 2F 64 61 74 61 UCCESS"/>.</data
+13:37:09: DEBUG: printBuffer:5353 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 ><?xml version="
+13:37:09: DEBUG: printBuffer:5353 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 1.0" encoding="U
+13:37:09: DEBUG: printBuffer:5353 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A TF-8" ?>.<data>.
+13:37:09: DEBUG: printBuffer:5353 3C 72 65 73 70 6F 6E 73 65 20 76 61 6C 75 65 3D <response value=
+13:37:09: DEBUG: printBuffer:5353 22 41 43 4B 22 20 2F 3E 0A 3C 2F 64 61 74 61 3E "ACK" />.</data>
+13:37:09: DEBUG: printBuffer:5366 
+
+
+13:37:09: DEBUG: XML FILE (115 bytes): CharsInBuffer=528-115=413
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="In handleErase Calling storage_device_erase()"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'In handleErase Calling storage_device_erase()'
+13:37:09: DEBUG: XML FILE (113 bytes): CharsInBuffer=413-113=300
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="DEBUG: SPINOR Erasing sector 1 Num blocks 2"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'DEBUG: SPINOR Erasing sector 1 Num blocks 2'
+13:37:09: DEBUG: XML FILE (112 bytes): CharsInBuffer=300-112=188
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="INFO: SPINOR Erase progress 100% (2 of 2)."/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'INFO: SPINOR Erase progress 100% (2 of 2).'
+13:37:09: DEBUG: XML FILE (109 bytes): CharsInBuffer=188-109=79
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="storage_device_erase() reported SUCCESS"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'storage_device_erase() reported SUCCESS'
+13:37:09: DEBUG: XML FILE (79 bytes): CharsInBuffer=79-79=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: DEBUG: Response was 'ACK'
+13:37:09: INFO: 
+
+
+13:37:09: INFO: ERASE SUCCESSFUL
+13:37:09: INFO: ERASE SUCCESSFUL
+13:37:09: INFO: ERASE SUCCESSFUL
+
+
+13:37:09: INFO: In handleProgram('firmware_table.bin')
+13:37:09: DEBUG: ==================================================================================
+13:37:09: DEBUG: ==================================================================================
+13:37:09: INFO: Looking for file 'firmware_table.bin'
+13:37:09: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\firmware_table.bin')
+13:37:09: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\firmware_table.bin') with AccessMode='rb'
+13:37:09: DEBUG: Trying get filesize, calling fseek()
+13:37:09: DEBUG: Found 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\firmware_table.bin' (4096 bytes)
+13:37:09: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\firmware_table.bin') with AccessMode='rb'
+13:37:09: DEBUG: Trying get filesize, calling fseek()
+13:37:09: DEBUG: File size is 4096 bytes
+13:37:09: DEBUG: NumSectors needed 1
+13:37:09: INFO: =======================================================
+13:37:09: INFO: {<program> FILE: 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\firmware_table.bin'}
+13:37:09: INFO: {<program> (4.00 KB) 1 sectors needed at location 0 on LUN 0}
+13:37:09: INFO: =======================================================
+
+13:37:09: DEBUG: CHANNEL DATA (P0003) (H00205) (    139 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program filename="firmware_table.bin" num_partition_sectors="1" start_sector="0" />
+</data>
+============================================================================================================
+
+13:37:09: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:09: DEBUG: CHANNEL DATA (178 bytes) <-- TARGET to HOST
+13:37:09: DEBUG: CharsInBuffer = 178
+13:37:09: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 178 bytes
+
+13:37:09: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:09: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:09: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:09: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 73 74 61 72 74 log value="start
+13:37:09: DEBUG: printBuffer:5353 20 30 2C 20 6E 75 6D 20 31 22 2F 3E 0A 3C 2F 64  0, num 1"/>.</d
+13:37:09: DEBUG: printBuffer:5353 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 6F ata><?xml versio
+13:37:09: DEBUG: printBuffer:5353 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E 67 n="1.0" encoding
+13:37:09: DEBUG: printBuffer:5353 3D 22 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 ="UTF-8" ?>.<dat
+13:37:09: DEBUG: printBuffer:5353 61 3E 0A 3C 72 65 73 70 6F 6E 73 65 20 76 61 6C a>.<response val
+13:37:09: DEBUG: printBuffer:5353 75 65 3D 22 41 43 4B 22 20 72 61 77 6D 6F 64 65 ue="ACK" rawmode
+13:37:09: DEBUG: printBuffer:5353 3D 22 74 72 75 65 22 20 2F 3E 0A 3C 2F 64 61 74 ="true" />.</dat
+13:37:09: DEBUG: printBuffer:5353 61 3E                                           a>
+13:37:09: DEBUG: printBuffer:5366 
+
+
+13:37:09: DEBUG: XML FILE (84 bytes): CharsInBuffer=178-84=94
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="start 0, num 1"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'start 0, num 1'
+13:37:09: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: DEBUG: Response was 'ACK'
+13:37:09: DEBUG: CHANNEL DATA (P0004) (H00206) (4.00 KB) - HOST TO TARGET -->
+13:37:09: INFO: FILE ACCESS SLOW!!    4.00 KB in  0.015 seconds ( 266.67 KBps) --- Overall to target  0.010 seconds (400.00 KBps)
+13:37:09: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:09: DEBUG: CHANNEL DATA (228 bytes) <-- TARGET to HOST
+13:37:09: DEBUG: CharsInBuffer = 228
+13:37:09: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 228 bytes
+
+13:37:09: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:09: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:09: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:09: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 46 69 6E 69 73 log value="Finis
+13:37:09: DEBUG: printBuffer:5353 68 65 64 20 70 72 6F 67 72 61 6D 6D 69 6E 67 20 hed programming 
+13:37:09: DEBUG: printBuffer:5353 73 74 61 72 74 5F 73 65 63 74 6F 72 20 31 20 61 start_sector 1 a
+13:37:09: DEBUG: printBuffer:5353 6E 64 20 54 6F 74 61 6C 53 65 63 74 6F 72 73 54 nd TotalSectorsT
+13:37:09: DEBUG: printBuffer:5353 6F 50 72 6F 67 72 61 6D 20 31 22 2F 3E 0A 3C 2F oProgram 1"/>.</
+13:37:09: DEBUG: printBuffer:5353 64 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 73 69 data><?xml versi
+13:37:09: DEBUG: printBuffer:5353 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 69 6E on="1.0" encodin
+13:37:09: DEBUG: printBuffer:5353 67 3D 22 55 54 46 2D 38 22 20 3F 3E 0A 3C 64 61 g="UTF-8" ?>.<da
+13:37:09: DEBUG: printBuffer:5353 74 61 3E 0A 3C 72 65 73 70 6F 6E 73 65 20 76 61 ta>.<response va
+13:37:09: DEBUG: printBuffer:5353 6C 75 65 3D 22 41 43 4B 22 20 72 61 77 6D 6F 64 lue="ACK" rawmod
+13:37:09: DEBUG: printBuffer:5353 65 3D 22 66 61 6C 73 65 22 20 2F 3E 0A 3C 2F 64 e="false" />.</d
+13:37:09: DEBUG: printBuffer:5353 61 74 61 3E                                     ata>
+13:37:09: DEBUG: printBuffer:5366 
+
+
+13:37:09: DEBUG: XML FILE (133 bytes): CharsInBuffer=228-133=95
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Finished programming start_sector 1 and TotalSectorsToProgram 1"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'Finished programming start_sector 1 and TotalSectorsToProgram 1'
+13:37:09: DEBUG: XML FILE (95 bytes): CharsInBuffer=95-95=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: DEBUG: Response was 'ACK'
+13:37:09: INFO: 
+13:37:09: INFO: =======================================================
+13:37:09: INFO: ==================== {SUCCESS} ========================
+13:37:09: INFO: =======================================================
+
+
+13:37:09: INFO: In handleProgram('Quartz_HASHED.elf')
+13:37:09: DEBUG: ==================================================================================
+13:37:09: DEBUG: ==================================================================================
+13:37:09: INFO: Looking for file 'Quartz_HASHED.elf'
+13:37:09: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\Quartz_HASHED.elf')
+13:37:09: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\Quartz_HASHED.elf') with AccessMode='rb'
+13:37:09: DEBUG: Trying get filesize, calling fseek()
+13:37:09: DEBUG: Found 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\Quartz_HASHED.elf' (1797296 bytes)
+13:37:09: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\Quartz_HASHED.elf') with AccessMode='rb'
+13:37:09: DEBUG: Trying get filesize, calling fseek()
+13:37:09: DEBUG: File size is 1797296 bytes
+13:37:09: DEBUG: NumSectors needed 439
+13:37:09: INFO: =======================================================
+13:37:09: INFO: {<program> FILE: 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\Quartz_HASHED.elf'}
+13:37:09: INFO: {<program> (1.71 MB) 439 sectors needed at location 19 on LUN 0}
+13:37:09: INFO: =======================================================
+
+13:37:09: DEBUG: CHANNEL DATA (P0005) (H00207) (    141 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program filename="Quartz_HASHED.elf" num_partition_sectors="439" start_sector="19" />
+</data>
+============================================================================================================
+
+13:37:09: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:09: DEBUG: CHANNEL DATA (181 bytes) <-- TARGET to HOST
+13:37:09: DEBUG: CharsInBuffer = 181
+13:37:09: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 181 bytes
+
+13:37:09: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:09: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:09: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:09: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 73 74 61 72 74 log value="start
+13:37:09: DEBUG: printBuffer:5353 20 31 39 2C 20 6E 75 6D 20 34 33 39 22 2F 3E 0A  19, num 439"/>.
+13:37:09: DEBUG: printBuffer:5353 3C 2F 64 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 </data><?xml ver
+13:37:09: DEBUG: printBuffer:5353 73 69 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 sion="1.0" encod
+13:37:09: DEBUG: printBuffer:5353 69 6E 67 3D 22 55 54 46 2D 38 22 20 3F 3E 0A 3C ing="UTF-8" ?>.<
+13:37:09: DEBUG: printBuffer:5353 64 61 74 61 3E 0A 3C 72 65 73 70 6F 6E 73 65 20 data>.<response 
+13:37:09: DEBUG: printBuffer:5353 76 61 6C 75 65 3D 22 41 43 4B 22 20 72 61 77 6D value="ACK" rawm
+13:37:09: DEBUG: printBuffer:5353 6F 64 65 3D 22 74 72 75 65 22 20 2F 3E 0A 3C 2F ode="true" />.</
+13:37:09: DEBUG: printBuffer:5353 64 61 74 61 3E                                  data>
+13:37:09: DEBUG: printBuffer:5366 
+
+
+13:37:09: DEBUG: XML FILE (87 bytes): CharsInBuffer=181-87=94
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="start 19, num 439"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: INFO: TARGET SAID: 'start 19, num 439'
+13:37:09: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:09: DEBUG: Response was 'ACK'
+13:37:09: DEBUG: CHANNEL DATA (P0006) (H00208) (4.00 KB) - HOST TO TARGET -->
+13:37:09: DEBUG: CHANNEL DATA (P0007) (H00209) (4.00 KB) - HOST TO TARGET -->
+13:37:09: DEBUG: CHANNEL DATA (P0008) (H00210) (4.00 KB) - HOST TO TARGET -->
+13:37:09: DEBUG: CHANNEL DATA (P0009) (H00211) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0010) (H00212) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0011) (H00213) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0012) (H00214) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0013) (H00215) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0014) (H00216) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0015) (H00217) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0016) (H00218) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0017) (H00219) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0018) (H00220) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0019) (H00221) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0020) (H00222) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0021) (H00223) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0022) (H00224) (4.00 KB) - HOST TO TARGET -->
+13:37:10: DEBUG: CHANNEL DATA (P0023) (H00225) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0024) (H00226) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0025) (H00227) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0026) (H00228) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0027) (H00229) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0028) (H00230) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0029) (H00231) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0030) (H00232) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0031) (H00233) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0032) (H00234) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0033) (H00235) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0034) (H00236) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0035) (H00237) (4.00 KB) - HOST TO TARGET -->
+13:37:11: INFO: FILE ACCESS SLOW!!  124.00 KB in  0.031 seconds (   3.91 MBps) --- Overall to target  2.028 seconds (61.14 KBps)
+13:37:11: DEBUG: CHANNEL DATA (P0036) (H00238) (4.00 KB) - HOST TO TARGET -->
+13:37:11: DEBUG: CHANNEL DATA (P0037) (H00239) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0038) (H00240) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0039) (H00241) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0040) (H00242) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0041) (H00243) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0042) (H00244) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0043) (H00245) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0044) (H00246) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0045) (H00247) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0046) (H00248) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0047) (H00249) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0048) (H00250) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0049) (H00251) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0050) (H00252) (4.00 KB) - HOST TO TARGET -->
+13:37:12: DEBUG: CHANNEL DATA (P0051) (H00253) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0052) (H00254) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0053) (H00255) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0054) (H00256) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0055) (H00257) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0056) (H00258) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0057) (H00259) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0058) (H00260) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0059) (H00261) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0060) (H00262) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0061) (H00263) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0062) (H00264) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0063) (H00265) (4.00 KB) - HOST TO TARGET -->
+13:37:13: INFO: FILE ACCESS SLOW!!  236.00 KB in  0.031 seconds (   7.43 MBps) --- Overall to target  4.056 seconds (58.18 KBps)
+13:37:13: DEBUG: CHANNEL DATA (P0064) (H00266) (4.00 KB) - HOST TO TARGET -->
+13:37:13: DEBUG: CHANNEL DATA (P0065) (H00267) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0066) (H00268) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0067) (H00269) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0068) (H00270) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0069) (H00271) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0070) (H00272) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0071) (H00273) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0072) (H00274) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0073) (H00275) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0074) (H00276) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0075) (H00277) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0076) (H00278) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0077) (H00279) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0078) (H00280) (4.00 KB) - HOST TO TARGET -->
+13:37:14: DEBUG: CHANNEL DATA (P0079) (H00281) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0080) (H00282) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0081) (H00283) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0082) (H00284) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0083) (H00285) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0084) (H00286) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0085) (H00287) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0086) (H00288) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0087) (H00289) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0088) (H00290) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0089) (H00291) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0090) (H00292) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0091) (H00293) (4.00 KB) - HOST TO TARGET -->
+13:37:15: DEBUG: CHANNEL DATA (P0092) (H00294) (4.00 KB) - HOST TO TARGET -->
+13:37:15: INFO: FILE ACCESS SLOW!!  352.00 KB in  0.047 seconds (   7.31 MBps) --- Overall to target  6.100 seconds (57.70 KBps)
+13:37:15: DEBUG: CHANNEL DATA (P0093) (H00295) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0094) (H00296) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0095) (H00297) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0096) (H00298) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0097) (H00299) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0098) (H00300) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0099) (H00301) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0100) (H00302) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0101) (H00303) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0102) (H00304) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0103) (H00305) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0104) (H00306) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0105) (H00307) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0106) (H00308) (4.00 KB) - HOST TO TARGET -->
+13:37:16: DEBUG: CHANNEL DATA (P0107) (H00309) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0108) (H00310) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0109) (H00311) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0110) (H00312) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0111) (H00313) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0112) (H00314) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0113) (H00315) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0114) (H00316) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0115) (H00317) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0116) (H00318) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0117) (H00319) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0118) (H00320) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0119) (H00321) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0120) (H00322) (4.00 KB) - HOST TO TARGET -->
+13:37:17: DEBUG: CHANNEL DATA (P0121) (H00323) (4.00 KB) - HOST TO TARGET -->
+13:37:18: INFO: FILE ACCESS SLOW!!  468.00 KB in  0.047 seconds (   9.72 MBps) --- Overall to target  8.175 seconds (57.25 KBps)
+13:37:18: DEBUG: CHANNEL DATA (P0122) (H00324) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0123) (H00325) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0124) (H00326) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0125) (H00327) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0126) (H00328) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0127) (H00329) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0128) (H00330) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0129) (H00331) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0130) (H00332) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0131) (H00333) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0132) (H00334) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0133) (H00335) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0134) (H00336) (4.00 KB) - HOST TO TARGET -->
+13:37:18: DEBUG: CHANNEL DATA (P0135) (H00337) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0136) (H00338) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0137) (H00339) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0138) (H00340) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0139) (H00341) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0140) (H00342) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0141) (H00343) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0142) (H00344) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0143) (H00345) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0144) (H00346) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0145) (H00347) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0146) (H00348) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0147) (H00349) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0148) (H00350) (4.00 KB) - HOST TO TARGET -->
+13:37:19: DEBUG: CHANNEL DATA (P0149) (H00351) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0150) (H00352) (4.00 KB) - HOST TO TARGET -->
+13:37:20: INFO: FILE ACCESS SLOW!!  584.00 KB in  0.047 seconds (  12.13 MBps) --- Overall to target 10.249 seconds (56.98 KBps)
+13:37:20: DEBUG: CHANNEL DATA (P0151) (H00353) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0152) (H00354) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0153) (H00355) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0154) (H00356) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0155) (H00357) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0156) (H00358) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0157) (H00359) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0158) (H00360) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0159) (H00361) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0160) (H00362) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0161) (H00363) (4.00 KB) - HOST TO TARGET -->
+13:37:20: DEBUG: CHANNEL DATA (P0162) (H00364) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0163) (H00365) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0164) (H00366) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0165) (H00367) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0166) (H00368) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0167) (H00369) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0168) (H00370) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0169) (H00371) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0170) (H00372) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0171) (H00373) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0172) (H00374) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0173) (H00375) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0174) (H00376) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0175) (H00377) (4.00 KB) - HOST TO TARGET -->
+13:37:21: DEBUG: CHANNEL DATA (P0176) (H00378) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0177) (H00379) (4.00 KB) - HOST TO TARGET -->
+13:37:22: INFO: FILE ACCESS SLOW!!  692.00 KB in  0.047 seconds (  14.38 MBps) --- Overall to target 12.262 seconds (56.43 KBps)
+13:37:22: DEBUG: CHANNEL DATA (P0178) (H00380) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0179) (H00381) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0180) (H00382) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0181) (H00383) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0182) (H00384) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0183) (H00385) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0184) (H00386) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0185) (H00387) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0186) (H00388) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0187) (H00389) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0188) (H00390) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0189) (H00391) (4.00 KB) - HOST TO TARGET -->
+13:37:22: DEBUG: CHANNEL DATA (P0190) (H00392) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0191) (H00393) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0192) (H00394) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0193) (H00395) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0194) (H00396) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0195) (H00397) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0196) (H00398) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0197) (H00399) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0198) (H00400) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0199) (H00401) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0200) (H00402) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0201) (H00403) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0202) (H00404) (4.00 KB) - HOST TO TARGET -->
+13:37:23: DEBUG: CHANNEL DATA (P0203) (H00405) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0204) (H00406) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0205) (H00407) (4.00 KB) - HOST TO TARGET -->
+13:37:24: INFO: FILE ACCESS SLOW!!  804.00 KB in  0.047 seconds (  16.71 MBps) --- Overall to target 14.305 seconds (56.20 KBps)
+13:37:24: DEBUG: CHANNEL DATA (P0206) (H00408) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0207) (H00409) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0208) (H00410) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0209) (H00411) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0210) (H00412) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0211) (H00413) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0212) (H00414) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0213) (H00415) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0214) (H00416) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0215) (H00417) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0216) (H00418) (4.00 KB) - HOST TO TARGET -->
+13:37:24: DEBUG: CHANNEL DATA (P0217) (H00419) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0218) (H00420) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0219) (H00421) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0220) (H00422) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0221) (H00423) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0222) (H00424) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0223) (H00425) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0224) (H00426) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0225) (H00427) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0226) (H00428) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0227) (H00429) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0228) (H00430) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0229) (H00431) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0230) (H00432) (4.00 KB) - HOST TO TARGET -->
+13:37:25: DEBUG: CHANNEL DATA (P0231) (H00433) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0232) (H00434) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0233) (H00435) (4.00 KB) - HOST TO TARGET -->
+13:37:26: INFO: FILE ACCESS SLOW!!  916.00 KB in  0.047 seconds (  19.03 MBps) --- Overall to target 16.318 seconds (56.13 KBps)
+13:37:26: DEBUG: CHANNEL DATA (P0234) (H00436) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0235) (H00437) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0236) (H00438) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0237) (H00439) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0238) (H00440) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0239) (H00441) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0240) (H00442) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0241) (H00443) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0242) (H00444) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0243) (H00445) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0244) (H00446) (4.00 KB) - HOST TO TARGET -->
+13:37:26: DEBUG: CHANNEL DATA (P0245) (H00447) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0246) (H00448) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0247) (H00449) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0248) (H00450) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0249) (H00451) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0250) (H00452) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0251) (H00453) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0252) (H00454) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0253) (H00455) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0254) (H00456) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0255) (H00457) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0256) (H00458) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0257) (H00459) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0258) (H00460) (4.00 KB) - HOST TO TARGET -->
+13:37:27: DEBUG: CHANNEL DATA (P0259) (H00461) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0260) (H00462) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0261) (H00463) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0262) (H00464) (4.00 KB) - HOST TO TARGET -->
+13:37:28: INFO: FILE ACCESS SLOW!!    1.01 MB in  0.047 seconds (  21.44 MBps) --- Overall to target 18.377 seconds (56.16 KBps)
+13:37:28: DEBUG: CHANNEL DATA (P0263) (H00465) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0264) (H00466) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0265) (H00467) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0266) (H00468) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0267) (H00469) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0268) (H00470) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0269) (H00471) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0270) (H00472) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0271) (H00473) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0272) (H00474) (4.00 KB) - HOST TO TARGET -->
+13:37:28: DEBUG: CHANNEL DATA (P0273) (H00475) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0274) (H00476) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0275) (H00477) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0276) (H00478) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0277) (H00479) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0278) (H00480) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0279) (H00481) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0280) (H00482) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0281) (H00483) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0282) (H00484) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0283) (H00485) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0284) (H00486) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0285) (H00487) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0286) (H00488) (4.00 KB) - HOST TO TARGET -->
+13:37:29: DEBUG: CHANNEL DATA (P0287) (H00489) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0288) (H00490) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0289) (H00491) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0290) (H00492) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0291) (H00493) (4.00 KB) - HOST TO TARGET -->
+13:37:30: INFO: FILE ACCESS SLOW!!    1.12 MB in  0.047 seconds (  23.85 MBps) --- Overall to target 20.405 seconds (56.26 KBps)
+13:37:30: DEBUG: CHANNEL DATA (P0292) (H00494) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0293) (H00495) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0294) (H00496) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0295) (H00497) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0296) (H00498) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0297) (H00499) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0298) (H00500) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0299) (H00501) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0300) (H00502) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0301) (H00503) (4.00 KB) - HOST TO TARGET -->
+13:37:30: DEBUG: CHANNEL DATA (P0302) (H00504) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0303) (H00505) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0304) (H00506) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0305) (H00507) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0306) (H00508) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0307) (H00509) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0308) (H00510) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0309) (H00511) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0310) (H00512) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0311) (H00513) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0312) (H00514) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0313) (H00515) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0314) (H00516) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0315) (H00517) (4.00 KB) - HOST TO TARGET -->
+13:37:31: DEBUG: CHANNEL DATA (P0316) (H00518) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0317) (H00519) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0318) (H00520) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0319) (H00521) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0320) (H00522) (4.00 KB) - HOST TO TARGET -->
+13:37:32: INFO: FILE ACCESS SLOW!!    1.23 MB in  0.047 seconds (  26.26 MBps) --- Overall to target 22.433 seconds (56.34 KBps)
+13:37:32: DEBUG: CHANNEL DATA (P0321) (H00523) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0322) (H00524) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0323) (H00525) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0324) (H00526) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0325) (H00527) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0326) (H00528) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0327) (H00529) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0328) (H00530) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0329) (H00531) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0330) (H00532) (4.00 KB) - HOST TO TARGET -->
+13:37:32: DEBUG: CHANNEL DATA (P0331) (H00533) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0332) (H00534) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0333) (H00535) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0334) (H00536) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0335) (H00537) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0336) (H00538) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0337) (H00539) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0338) (H00540) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0339) (H00541) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0340) (H00542) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0341) (H00543) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0342) (H00544) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0343) (H00545) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0344) (H00546) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0345) (H00547) (4.00 KB) - HOST TO TARGET -->
+13:37:33: DEBUG: CHANNEL DATA (P0346) (H00548) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0347) (H00549) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0348) (H00550) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0349) (H00551) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0350) (H00552) (4.00 KB) - HOST TO TARGET -->
+13:37:34: INFO: FILE ACCESS SLOW!!    1.35 MB in  0.047 seconds (  28.76 MBps) --- Overall to target 24.492 seconds (56.51 KBps)
+13:37:34: DEBUG: CHANNEL DATA (P0351) (H00553) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0352) (H00554) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0353) (H00555) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0354) (H00556) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0355) (H00557) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0356) (H00558) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0357) (H00559) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0358) (H00560) (4.00 KB) - HOST TO TARGET -->
+13:37:34: DEBUG: CHANNEL DATA (P0359) (H00561) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0360) (H00562) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0361) (H00563) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0362) (H00564) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0363) (H00565) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0364) (H00566) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0365) (H00567) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0366) (H00568) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0367) (H00569) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0368) (H00570) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0369) (H00571) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0370) (H00572) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0371) (H00573) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0372) (H00574) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0373) (H00575) (4.00 KB) - HOST TO TARGET -->
+13:37:35: DEBUG: CHANNEL DATA (P0374) (H00576) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0375) (H00577) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0376) (H00578) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0377) (H00579) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0378) (H00580) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0379) (H00581) (4.00 KB) - HOST TO TARGET -->
+13:37:36: INFO: FILE ACCESS SLOW!!    1.46 MB in  0.047 seconds (  31.17 MBps) --- Overall to target 26.505 seconds (56.59 KBps)
+13:37:36: DEBUG: CHANNEL DATA (P0380) (H00582) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0381) (H00583) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0382) (H00584) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0383) (H00585) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0384) (H00586) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0385) (H00587) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0386) (H00588) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0387) (H00589) (4.00 KB) - HOST TO TARGET -->
+13:37:36: DEBUG: CHANNEL DATA (P0388) (H00590) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0389) (H00591) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0390) (H00592) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0391) (H00593) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0392) (H00594) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0393) (H00595) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0394) (H00596) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0395) (H00597) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0396) (H00598) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0397) (H00599) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0398) (H00600) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0399) (H00601) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0400) (H00602) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0401) (H00603) (4.00 KB) - HOST TO TARGET -->
+13:37:37: DEBUG: CHANNEL DATA (P0402) (H00604) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0403) (H00605) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0404) (H00606) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0405) (H00607) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0406) (H00608) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0407) (H00609) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0408) (H00610) (4.00 KB) - HOST TO TARGET -->
+13:37:38: INFO: FILE ACCESS SLOW!!    1.58 MB in  0.047 seconds (  33.58 MBps) --- Overall to target 28.579 seconds (56.54 KBps)
+13:37:38: DEBUG: CHANNEL DATA (P0409) (H00611) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0410) (H00612) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0411) (H00613) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0412) (H00614) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0413) (H00615) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0414) (H00616) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0415) (H00617) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0416) (H00618) (4.00 KB) - HOST TO TARGET -->
+13:37:38: DEBUG: CHANNEL DATA (P0417) (H00619) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0418) (H00620) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0419) (H00621) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0420) (H00622) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0421) (H00623) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0422) (H00624) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0423) (H00625) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0424) (H00626) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0425) (H00627) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0426) (H00628) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0427) (H00629) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0428) (H00630) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0429) (H00631) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0430) (H00632) (4.00 KB) - HOST TO TARGET -->
+13:37:39: DEBUG: CHANNEL DATA (P0431) (H00633) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0432) (H00634) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0433) (H00635) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0434) (H00636) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0435) (H00637) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0436) (H00638) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0437) (H00639) (4.00 KB) - HOST TO TARGET -->
+13:37:40: INFO: FILE ACCESS SLOW!!    1.69 MB in  0.047 seconds (  35.99 MBps) --- Overall to target 30.639 seconds (56.53 KBps)
+13:37:40: DEBUG: CHANNEL DATA (P0438) (H00640) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0439) (H00641) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0440) (H00642) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0441) (H00643) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0442) (H00644) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0443) (H00645) (4.00 KB) - HOST TO TARGET -->
+13:37:40: DEBUG: CHANNEL DATA (P0444) (H00646) (4.00 KB) - HOST TO TARGET -->
+13:37:40: INFO: Overall to target 31.107 seconds (56.45 KBps)
+13:37:40: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:41: DEBUG: CHANNEL DATA (232 bytes) <-- TARGET to HOST
+13:37:41: DEBUG: CharsInBuffer = 232
+13:37:41: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 232 bytes
+
+13:37:41: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:41: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:41: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:41: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 46 69 6E 69 73 log value="Finis
+13:37:41: DEBUG: printBuffer:5353 68 65 64 20 70 72 6F 67 72 61 6D 6D 69 6E 67 20 hed programming 
+13:37:41: DEBUG: printBuffer:5353 73 74 61 72 74 5F 73 65 63 74 6F 72 20 34 35 38 start_sector 458
+13:37:41: DEBUG: printBuffer:5353 20 61 6E 64 20 54 6F 74 61 6C 53 65 63 74 6F 72  and TotalSector
+13:37:41: DEBUG: printBuffer:5353 73 54 6F 50 72 6F 67 72 61 6D 20 34 33 39 22 2F sToProgram 439"/
+13:37:41: DEBUG: printBuffer:5353 3E 0A 3C 2F 64 61 74 61 3E 3C 3F 78 6D 6C 20 76 >.</data><?xml v
+13:37:41: DEBUG: printBuffer:5353 65 72 73 69 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 ersion="1.0" enc
+13:37:41: DEBUG: printBuffer:5353 6F 64 69 6E 67 3D 22 55 54 46 2D 38 22 20 3F 3E oding="UTF-8" ?>
+13:37:41: DEBUG: printBuffer:5353 0A 3C 64 61 74 61 3E 0A 3C 72 65 73 70 6F 6E 73 .<data>.<respons
+13:37:41: DEBUG: printBuffer:5353 65 20 76 61 6C 75 65 3D 22 41 43 4B 22 20 72 61 e value="ACK" ra
+13:37:41: DEBUG: printBuffer:5353 77 6D 6F 64 65 3D 22 66 61 6C 73 65 22 20 2F 3E wmode="false" />
+13:37:41: DEBUG: printBuffer:5353 0A 3C 2F 64 61 74 61 3E                         .</data>
+13:37:41: DEBUG: printBuffer:5366 
+
+
+13:37:41: DEBUG: XML FILE (137 bytes): CharsInBuffer=232-137=95
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Finished programming start_sector 458 and TotalSectorsToProgram 439"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:41: INFO: TARGET SAID: 'Finished programming start_sector 458 and TotalSectorsToProgram 439'
+13:37:41: DEBUG: XML FILE (95 bytes): CharsInBuffer=95-95=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:41: DEBUG: Response was 'ACK'
+13:37:41: INFO: 
+13:37:41: INFO: =======================================================
+13:37:41: INFO: ==================== {SUCCESS} ========================
+13:37:41: INFO: =======================================================
+
+
+13:37:41: INFO: In handleProgram('ioe_ram_m0_threadx_ipt.mbn')
+13:37:41: DEBUG: ==================================================================================
+13:37:41: DEBUG: ==================================================================================
+13:37:41: INFO: Looking for file 'ioe_ram_m0_threadx_ipt.mbn'
+13:37:41: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\ioe_ram_m0_threadx_ipt.mbn')
+13:37:41: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\ioe_ram_m0_threadx_ipt.mbn')
+13:37:41: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\ioe_ram_m0_threadx_ipt.mbn') with AccessMode='rb'
+13:37:41: DEBUG: Trying get filesize, calling fseek()
+13:37:41: DEBUG: Found 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\ioe_ram_m0_threadx_ipt.mbn' (87680 bytes)
+13:37:41: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\ioe_ram_m0_threadx_ipt.mbn') with AccessMode='rb'
+13:37:41: DEBUG: Trying get filesize, calling fseek()
+13:37:41: DEBUG: File size is 87680 bytes
+13:37:41: DEBUG: NumSectors needed 22
+13:37:41: INFO: =======================================================
+13:37:41: INFO: {<program> FILE: 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\ioe_ram_m0_threadx_ipt.mbn'}
+13:37:41: INFO: {<program> (85.63 KB) 22 sectors needed at location 458 on LUN 0}
+13:37:41: INFO: =======================================================
+
+13:37:41: DEBUG: CHANNEL DATA (P0445) (H00647) (    150 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program filename="ioe_ram_m0_threadx_ipt.mbn" num_partition_sectors="22" start_sector="458" />
+</data>
+============================================================================================================
+
+13:37:41: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:41: DEBUG: CHANNEL DATA (181 bytes) <-- TARGET to HOST
+13:37:41: DEBUG: CharsInBuffer = 181
+13:37:41: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 181 bytes
+
+13:37:41: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:41: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:41: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:41: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 73 74 61 72 74 log value="start
+13:37:41: DEBUG: printBuffer:5353 20 34 35 38 2C 20 6E 75 6D 20 32 32 22 2F 3E 0A  458, num 22"/>.
+13:37:41: DEBUG: printBuffer:5353 3C 2F 64 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 </data><?xml ver
+13:37:41: DEBUG: printBuffer:5353 73 69 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 sion="1.0" encod
+13:37:41: DEBUG: printBuffer:5353 69 6E 67 3D 22 55 54 46 2D 38 22 20 3F 3E 0A 3C ing="UTF-8" ?>.<
+13:37:41: DEBUG: printBuffer:5353 64 61 74 61 3E 0A 3C 72 65 73 70 6F 6E 73 65 20 data>.<response 
+13:37:41: DEBUG: printBuffer:5353 76 61 6C 75 65 3D 22 41 43 4B 22 20 72 61 77 6D value="ACK" rawm
+13:37:41: DEBUG: printBuffer:5353 6F 64 65 3D 22 74 72 75 65 22 20 2F 3E 0A 3C 2F ode="true" />.</
+13:37:41: DEBUG: printBuffer:5353 64 61 74 61 3E                                  data>
+13:37:41: DEBUG: printBuffer:5366 
+
+
+13:37:41: DEBUG: XML FILE (87 bytes): CharsInBuffer=181-87=94
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="start 458, num 22"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:41: INFO: TARGET SAID: 'start 458, num 22'
+13:37:41: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:41: DEBUG: Response was 'ACK'
+13:37:41: DEBUG: CHANNEL DATA (P0446) (H00648) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0447) (H00649) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0448) (H00650) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0449) (H00651) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0450) (H00652) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0451) (H00653) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0452) (H00654) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0453) (H00655) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0454) (H00656) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0455) (H00657) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0456) (H00658) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0457) (H00659) (4.00 KB) - HOST TO TARGET -->
+13:37:41: DEBUG: CHANNEL DATA (P0458) (H00660) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0459) (H00661) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0460) (H00662) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0461) (H00663) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0462) (H00664) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0463) (H00665) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0464) (H00666) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0465) (H00667) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0466) (H00668) (4.00 KB) - HOST TO TARGET -->
+13:37:42: DEBUG: CHANNEL DATA (P0467) (H00669) (4.00 KB) - HOST TO TARGET -->
+13:37:42: INFO: FILE ACCESS SLOW!!   88.00 KB in  0.015 seconds (   5.73 MBps) --- Overall to target  1.404 seconds (62.68 KBps)
+13:37:42: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:42: DEBUG: CHANNEL DATA (231 bytes) <-- TARGET to HOST
+13:37:42: DEBUG: CharsInBuffer = 231
+13:37:42: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 231 bytes
+
+13:37:42: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:42: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:42: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:42: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 46 69 6E 69 73 log value="Finis
+13:37:42: DEBUG: printBuffer:5353 68 65 64 20 70 72 6F 67 72 61 6D 6D 69 6E 67 20 hed programming 
+13:37:42: DEBUG: printBuffer:5353 73 74 61 72 74 5F 73 65 63 74 6F 72 20 34 38 30 start_sector 480
+13:37:42: DEBUG: printBuffer:5353 20 61 6E 64 20 54 6F 74 61 6C 53 65 63 74 6F 72  and TotalSector
+13:37:42: DEBUG: printBuffer:5353 73 54 6F 50 72 6F 67 72 61 6D 20 32 32 22 2F 3E sToProgram 22"/>
+13:37:42: DEBUG: printBuffer:5353 0A 3C 2F 64 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 .</data><?xml ve
+13:37:42: DEBUG: printBuffer:5353 72 73 69 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 6F rsion="1.0" enco
+13:37:42: DEBUG: printBuffer:5353 64 69 6E 67 3D 22 55 54 46 2D 38 22 20 3F 3E 0A ding="UTF-8" ?>.
+13:37:42: DEBUG: printBuffer:5353 3C 64 61 74 61 3E 0A 3C 72 65 73 70 6F 6E 73 65 <data>.<response
+13:37:42: DEBUG: printBuffer:5353 20 76 61 6C 75 65 3D 22 41 43 4B 22 20 72 61 77  value="ACK" raw
+13:37:42: DEBUG: printBuffer:5353 6D 6F 64 65 3D 22 66 61 6C 73 65 22 20 2F 3E 0A mode="false" />.
+13:37:42: DEBUG: printBuffer:5353 3C 2F 64 61 74 61 3E                            </data>
+13:37:42: DEBUG: printBuffer:5366 
+
+
+13:37:42: DEBUG: XML FILE (136 bytes): CharsInBuffer=231-136=95
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Finished programming start_sector 480 and TotalSectorsToProgram 22"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:42: INFO: TARGET SAID: 'Finished programming start_sector 480 and TotalSectorsToProgram 22'
+13:37:42: DEBUG: XML FILE (95 bytes): CharsInBuffer=95-95=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:42: DEBUG: Response was 'ACK'
+13:37:42: INFO: 
+13:37:42: INFO: =======================================================
+13:37:42: INFO: ==================== {SUCCESS} ========================
+13:37:42: INFO: =======================================================
+
+
+13:37:42: INFO: In handleProgram('wlan_fw_img.bin')
+13:37:42: DEBUG: ==================================================================================
+13:37:42: DEBUG: ==================================================================================
+13:37:42: INFO: Looking for file 'wlan_fw_img.bin'
+13:37:42: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\wlan_fw_img.bin')
+13:37:42: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\wlan_fw_img.bin')
+13:37:42: DEBUG: 1. Calling stat(D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\wlan_fw_img.bin')
+13:37:42: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\wlan_fw_img.bin') with AccessMode='rb'
+13:37:42: DEBUG: Trying get filesize, calling fseek()
+13:37:42: DEBUG: Found 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\wlan_fw_img.bin' (114864 bytes)
+13:37:42: DEBUG: 2. Calling fopen('D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\wlan_fw_img.bin') with AccessMode='rb'
+13:37:42: DEBUG: Trying get filesize, calling fseek()
+13:37:42: DEBUG: File size is 114864 bytes
+13:37:42: DEBUG: NumSectors needed 29
+13:37:42: INFO: =======================================================
+13:37:42: INFO: {<program> FILE: 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\wlan_fw_img.bin'}
+13:37:42: INFO: {<program> (112.17 KB) 29 sectors needed at location 480 on LUN 0}
+13:37:42: INFO: =======================================================
+
+13:37:42: DEBUG: CHANNEL DATA (P0468) (H00670) (    139 bytes) - HOST TO TARGET -->
+===========================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<program filename="wlan_fw_img.bin" num_partition_sectors="29" start_sector="480" />
+</data>
+============================================================================================================
+
+13:37:42: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:42: DEBUG: CHANNEL DATA (181 bytes) <-- TARGET to HOST
+13:37:42: DEBUG: CharsInBuffer = 181
+13:37:42: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 181 bytes
+
+13:37:42: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:42: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:42: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:42: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 73 74 61 72 74 log value="start
+13:37:42: DEBUG: printBuffer:5353 20 34 38 30 2C 20 6E 75 6D 20 32 39 22 2F 3E 0A  480, num 29"/>.
+13:37:42: DEBUG: printBuffer:5353 3C 2F 64 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 72 </data><?xml ver
+13:37:42: DEBUG: printBuffer:5353 73 69 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 6F 64 sion="1.0" encod
+13:37:42: DEBUG: printBuffer:5353 69 6E 67 3D 22 55 54 46 2D 38 22 20 3F 3E 0A 3C ing="UTF-8" ?>.<
+13:37:42: DEBUG: printBuffer:5353 64 61 74 61 3E 0A 3C 72 65 73 70 6F 6E 73 65 20 data>.<response 
+13:37:42: DEBUG: printBuffer:5353 76 61 6C 75 65 3D 22 41 43 4B 22 20 72 61 77 6D value="ACK" rawm
+13:37:42: DEBUG: printBuffer:5353 6F 64 65 3D 22 74 72 75 65 22 20 2F 3E 0A 3C 2F ode="true" />.</
+13:37:42: DEBUG: printBuffer:5353 64 61 74 61 3E                                  data>
+13:37:42: DEBUG: printBuffer:5366 
+
+
+13:37:42: DEBUG: XML FILE (87 bytes): CharsInBuffer=181-87=94
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="start 480, num 29"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:42: INFO: TARGET SAID: 'start 480, num 29'
+13:37:42: DEBUG: XML FILE (94 bytes): CharsInBuffer=94-94=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="true" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:42: DEBUG: Response was 'ACK'
+13:37:43: DEBUG: CHANNEL DATA (P0469) (H00671) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0470) (H00672) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0471) (H00673) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0472) (H00674) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0473) (H00675) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0474) (H00676) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0475) (H00677) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0476) (H00678) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0477) (H00679) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0478) (H00680) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0479) (H00681) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0480) (H00682) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0481) (H00683) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0482) (H00684) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0483) (H00685) (4.00 KB) - HOST TO TARGET -->
+13:37:43: DEBUG: CHANNEL DATA (P0484) (H00686) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0485) (H00687) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0486) (H00688) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0487) (H00689) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0488) (H00690) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0489) (H00691) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0490) (H00692) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0491) (H00693) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0492) (H00694) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0493) (H00695) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0494) (H00696) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0495) (H00697) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0496) (H00698) (4.00 KB) - HOST TO TARGET -->
+13:37:44: DEBUG: CHANNEL DATA (P0497) (H00699) (4.00 KB) - HOST TO TARGET -->
+13:37:44: INFO: FILE ACCESS SLOW!!  116.00 KB in  0.015 seconds (   7.55 MBps) --- Overall to target  1.935 seconds (59.95 KBps)
+13:37:44: DEBUG: CharsInBuffer=0 Trying to read from USB 4096 bytes
+13:37:45: DEBUG: CHANNEL DATA (231 bytes) <-- TARGET to HOST
+13:37:45: DEBUG: CharsInBuffer = 231
+13:37:45: DEBUG: printBuffer:5276 PRETTYPRINT Buffer is 231 bytes
+
+13:37:45: DEBUG: printBuffer:5353 3C 3F 78 6D 6C 20 76 65 72 73 69 6F 6E 3D 22 31 <?xml version="1
+13:37:45: DEBUG: printBuffer:5353 2E 30 22 20 65 6E 63 6F 64 69 6E 67 3D 22 55 54 .0" encoding="UT
+13:37:45: DEBUG: printBuffer:5353 46 2D 38 22 20 3F 3E 0A 3C 64 61 74 61 3E 0A 3C F-8" ?>.<data>.<
+13:37:45: DEBUG: printBuffer:5353 6C 6F 67 20 76 61 6C 75 65 3D 22 46 69 6E 69 73 log value="Finis
+13:37:45: DEBUG: printBuffer:5353 68 65 64 20 70 72 6F 67 72 61 6D 6D 69 6E 67 20 hed programming 
+13:37:45: DEBUG: printBuffer:5353 73 74 61 72 74 5F 73 65 63 74 6F 72 20 35 30 39 start_sector 509
+13:37:45: DEBUG: printBuffer:5353 20 61 6E 64 20 54 6F 74 61 6C 53 65 63 74 6F 72  and TotalSector
+13:37:45: DEBUG: printBuffer:5353 73 54 6F 50 72 6F 67 72 61 6D 20 32 39 22 2F 3E sToProgram 29"/>
+13:37:45: DEBUG: printBuffer:5353 0A 3C 2F 64 61 74 61 3E 3C 3F 78 6D 6C 20 76 65 .</data><?xml ve
+13:37:45: DEBUG: printBuffer:5353 72 73 69 6F 6E 3D 22 31 2E 30 22 20 65 6E 63 6F rsion="1.0" enco
+13:37:45: DEBUG: printBuffer:5353 64 69 6E 67 3D 22 55 54 46 2D 38 22 20 3F 3E 0A ding="UTF-8" ?>.
+13:37:45: DEBUG: printBuffer:5353 3C 64 61 74 61 3E 0A 3C 72 65 73 70 6F 6E 73 65 <data>.<response
+13:37:45: DEBUG: printBuffer:5353 20 76 61 6C 75 65 3D 22 41 43 4B 22 20 72 61 77  value="ACK" raw
+13:37:45: DEBUG: printBuffer:5353 6D 6F 64 65 3D 22 66 61 6C 73 65 22 20 2F 3E 0A mode="false" />.
+13:37:45: DEBUG: printBuffer:5353 3C 2F 64 61 74 61 3E                            </data>
+13:37:45: DEBUG: printBuffer:5366 
+
+
+13:37:45: DEBUG: XML FILE (136 bytes): CharsInBuffer=231-136=95
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<log value="Finished programming start_sector 509 and TotalSectorsToProgram 29"/>
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:45: INFO: TARGET SAID: 'Finished programming start_sector 509 and TotalSectorsToProgram 29'
+13:37:45: DEBUG: XML FILE (95 bytes): CharsInBuffer=95-95=0
+-------------------------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+<response value="ACK" rawmode="false" />
+</data>
+-------------------------------------------------------------------------------------------
+
+13:37:45: DEBUG: Response was 'ACK'
+13:37:45: INFO: 
+13:37:45: INFO: =======================================================
+13:37:45: INFO: ==================== {SUCCESS} ========================
+13:37:45: INFO: =======================================================
+
+
+13:37:45: INFO: ==============================================================
+13:37:45: INFO: Files used and their paths
+13:37:45: INFO:   1 'output\port_trace.txt'
+13:37:45: INFO:   2 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\generated_fwd_table.xml'
+13:37:45: INFO:   3 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\firmware_table.bin'
+13:37:45: INFO:   4 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\Quartz_HASHED.elf'
+13:37:45: INFO:   5 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\ioe_ram_m0_threadx_ipt.mbn'
+13:37:45: INFO:   6 'D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\wlan_fw_img.bin'
+13:37:45: INFO:      _             (done)
+13:37:45: INFO:     | |                 
+13:37:45: INFO:   __| | ___  _ __   ___ 
+13:37:45: INFO:  / _` |/ _ \| '_ \ / _ \
+13:37:45: INFO: | (_| | (_) | | | |  __/
+13:37:45: INFO:  \__,_|\___/|_| |_|\___|
+13:37:45: INFO: {All Finished Successfully}
+
+13:37:45: INFO: Overall to target 36.676 seconds (53.36 KBps)

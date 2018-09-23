@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<?ignore
+This XML file was auto-generated:
+gen_part_table.py --output=output\generated_partition_table.xml --begin=76KB --partition --file=D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output\Quartz_HASHED.elf --partition --file=D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx\ioe_ram_m0_threadx_ipt.mbn --partition --file=D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan\wlan_fw_img.bin --partition --id=FS1 --start=12KB --size=64KB --partition --id=UNUSED --size=8KB --start=4KB
+?>
+<firmwaredescriptor>
+   <instructions erase_block_size_bytes="4096" table_align_size_bytes="4096"/>
+   <table>
+      <header rank="1" signature="0x54445746" status="1" version="1"/>
+      <partition dirname="D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\quartz\demo\QCLI_demo\build\gcc\output" filename="Quartz_HASHED.elf" image_id="10" start_block="19" size_in_kb="1756"/> <!--10-->
+      <partition dirname="D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\cortex-m0\threadx" filename="ioe_ram_m0_threadx_ipt.mbn" image_id="11" size_in_kb="86"/> <!--M0/CONSS Firmware-->
+      <partition dirname="D:\qca4020-or-2-0_qca_oem_sdk-cdb.git\target\bin\wlan" filename="wlan_fw_img.bin" image_id="13" size_in_kb="113"/> <!--WLAN Firmware-->
+      <partition filename="" image_id="5" start_block="3" size_in_kb="64"/> <!--Primary Filesystem-->
+      <partition filename="" image_id="129" start_block="1" size_in_kb="8"/> <!--Unused-->
+   </table>
+</firmwaredescriptor>
