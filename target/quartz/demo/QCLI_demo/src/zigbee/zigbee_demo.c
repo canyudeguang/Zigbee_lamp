@@ -382,7 +382,7 @@ static QCLI_Command_Status_t cmd_ZB_Shutdown(uint32_t Parameter_Count, QCLI_Para
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
-static QCLI_Command_Status_t d_cmd_ZB_AddDevice(uint32_t Parameter_Count,  QCLI_Parameter_t *Parameter_List)
+QCLI_Command_Status_t d_cmd_ZB_AddDevice(uint32_t Parameter_Count,  QCLI_Parameter_t *Parameter_List)
 {
 	return cmd_ZB_AddDevice(Parameter_Count,  Parameter_List);
 }

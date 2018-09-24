@@ -159,9 +159,10 @@ static IOTHUBMESSAGE_DISPOSITION_RESULT IoTHubMessage(IOTHUB_MESSAGE_HANDLE mess
         {
             (void)memcpy(temp, buffer, size);
             temp[size] = '\0';
-			 QCLI_Printf(qcli_ecosystem_handle,"failed to malloc %s %d %s",temp,size,temp[82]);
+			 QCLI_Printf(qcli_ecosystem_handle,"failed to malloc %s %d %s\n",temp,size,temp[82]);
+			 QCLI_Printf(qcli_ecosystem_handle,"yang:--------open zigbee light %d\n",temp[82]);
 			 switch(temp[82]){
-				 case 49:
+				 case 125:
 				 QCLI_Printf(qcli_ecosystem_handle,"open zigbee light %s",temp);
 				 char* color=malloc(6);
 				 char* bright=malloc(5);
@@ -182,8 +183,13 @@ static IOTHUBMESSAGE_DISPOSITION_RESULT IoTHubMessage(IOTHUB_MESSAGE_HANDLE mess
 				 
 				 
 				 QCLI_Printf(qcli_ecosystem_handle,"color and bright %s %s",destination,bright);
+
+				 Control_ZigbeeLightOnOff(1);
+				 Control_ZigbeeLightLevel(int_bringht);
+				 Control_ZigbeeColorTemperaturn(int_color);
 				 break;
 				 case 50:
+				 Control_ZigbeeLightOnOff(0);
 				 QCLI_Printf(qcli_ecosystem_handle,"close zigbee light");
 				 break;
 				 case 51:

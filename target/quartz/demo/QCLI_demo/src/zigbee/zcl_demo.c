@@ -465,7 +465,7 @@ static QCLI_Command_Status_t cmd_ZB_CL_ListEndpointTypes(uint32_t Parameter_Coun
     - QCLI_STATUS_USAGE_E indicates there is usage error associated with this
       command.
 */
-static QCLI_Command_Status_t cmd_ZB_CL_CreateEndpoint(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
+QCLI_Command_Status_t d_cmd_ZB_CL_CreateEndpoint(uint32_t Parameter_Count, QCLI_Parameter_t *Parameter_List)
 {
 	return cmd_ZB_CL_CreateEndpoint(Parameter_Count, Parameter_List);
 }

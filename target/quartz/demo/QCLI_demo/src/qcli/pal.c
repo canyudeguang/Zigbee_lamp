@@ -421,7 +421,7 @@ void Connect_ZigbeeDevice()
 
 int Control_ZigbeeLightOnOff(int on)
 {
-        if(on > 1)
+        if(on > 0)
         {
                 QCLI_Parameter_t param_on[2];
                 param_on[0].Integer_Value = 1;
@@ -568,8 +568,10 @@ void init_WiFi()
 */
 static void QCLI_Thread(void *Param)
 {
-   init_WiFi();
-   init_ecosystem();
+	init_Zigbee();	
+	Connect_ZigbeeDevice();
+	init_WiFi();
+	init_ecosystem();
    uint32_t CurrentIndex;
 
 
