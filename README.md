@@ -1,6 +1,6 @@
 ZigbeeLamp
 =====================================================================
-  This project is based on Qualcomm QCA4020 development kit whose name is Zigbee Lamp. The main objective of this demo is to create a intelligent lighting using the QCA4020 development kit. This is done by using an application on the mobile phone (Android O) to connect to the QCA4020 via Zigbee and control the sengled bulb.
+  This project is based on Qualcomm QCA4020 development kit whose name is Zigbee Lamp. The main objective of this demo is to create a intelligent lighting using the QCA4020 development kit. This is done by using an application on the mobile phone (Android O) to connect to the QCA4020 via Zigbee and control the sengled bulb on or off status of bulb, color temperature and dim.
 
 
 Instruction:
