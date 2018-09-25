@@ -1,9 +1,6 @@
 ZigbeeLamp
 =====================================================================
-  This project is based on Qualcomm QCA4020 development kit whose name is Zigbee Lamp. The main objective of this demo is done
-  by using an application on mobile phone to connect to the QCA4020 via BLE(Bluetooth Low Energy),and there will PWM wave output
-  through GPIO of QCA4020,at the same time,servo motor will have angle change at different PWM situations.Actually the servo motor
-  of this demo is designed to simulate a smart lock.  
+  This project is based on Qualcomm QCA4020 development kit whose name is Zigbee Lamp. The main objective of this demo is to create a intelligent lighting using the QCA4020 development kit. This is done by using an application on the mobile phone (Android O) to connect to the QCA4020 via Zigbee and control the sengled bulb.
 
 
 Instruction:
@@ -11,7 +8,7 @@ Instruction:
 
 Hardware requirements
 --------------
-QCA4020 development Kit, Servo motor, Adaptor, iPhone
+QCA4020 development Kit, Sengled blub, Adaptor, Mobile Phone(Android O), Lamp holder, Trandformer(120V->110V)
 
 Software requirements
 --------  
@@ -29,7 +26,7 @@ After installation, add the path to python to 'PATH' environment variable.
 Assembly Instructions
 -----------------------------------------------------------------------------
 Install the jumper of QCA4020 development kit and connect the servo motor to QCA4020 as described in the section  
-"Build/Assembly Instructions" of "CDB20_Project_Content_SmartLock.docx".
+"Build/Assembly Instructions" of "CDB20_Project_Content_ZigbeeLamp.docx".
 
 Usage Instructions
 --------------------------
@@ -37,10 +34,12 @@ Usage Instructions
 
 (2)Compile the code and flash the image as described in "Hello world with QCA4020 Development" project. 
 
-(3)Power on the QCA4020  
+(3)Power on the QCA4020 via the power button,and the QCA4020 will build Zigbee network automatically.  
 
-(4)Open the app named "LightBlue" on iPhone, and "LightBlue" will search BLE automatically, then connect the spot named "lpw-spple-demo".  
+(4)Power on the Zigbee bulb,and it will join the Zigbee network automatically.  
 
-(5)The service we used is called "UUID:1815", and we use the fourth characteristic to control motor.  
+(5)Using “Azure_console” app on the mobile phone to control on or off status of bulb via clicking “Open” or  “Close” button.  
 
-(6)We input "FFFF", the lock will be "open", and "0000" the lock will be "closed". 
+(6)Using “Azure_console” app on the mobile phone to control color temperature via setting the values ranged from “0x0000~0xFFFF” .  
+
+(7)Using “Azure_console” app on the mobile phone to control dim via setting the values ranged from “0~255”.  
